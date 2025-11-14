@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>zh.cppreference.com 中文镜像</title>
+	</head>
+
+	<body>
+		<h1>
+			<a
+				href="http://zh.cppreference.com/"
+				target="_blank"
+				rel="noopener noreferrer"
+				>zh.cppreference.com</a
+			>
+			中文镜像
+		</h1>
+		<p>
+			基于 GitHub
+			<a
+				href="https://github.com/myfreeer/cppreference2mshelp"
+				target="_blank"
+				rel="noopener noreferrer"
+				>myfreeer/cppreference2mshelp</a
+			>
+			<a
+				href="https://github.com/myfreeer/cppreference2mshelp/releases/tag/2025.04"
+				target="_blank"
+				rel="noopener noreferrer"
+				>2025.04 版本</a
+			>
+			制作。
+		</p>
+		<p>
+			<span id="countdown" style="font-weight: bold; color: red">3s</span>
+			后将自动跳转到文档首页。
+		</p>
+	</body>
+	<script>
+		const countdownElement = document.getElementById("countdown");
+		let countdown = 3;
+
+		const interval = setInterval(() => {
+			countdown--;
+			if (countdown > 0) {
+				countdownElement.textContent = countdown + "s";
+			} else {
+				clearInterval(interval);
+				window.location.href = "reference/zh/index.html";
+			}
+		}, 1000);
+	</script>
+</html>

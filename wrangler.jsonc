@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cppreference-zh",
+  "compatibility_date": "2025-11-09",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./html-book"
+  }
+}
