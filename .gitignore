@@ -1,2 +1,10 @@
 node_modules/
 .zed/
+
+# wrangler project
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+.wrangler/
