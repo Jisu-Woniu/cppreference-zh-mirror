@@ -1,7 +1,5 @@
 **
 !**/
-!**/.assetsignore
-!**/.gitignore
 !**/*.html
 !**/*.css
 !**/*.js
