@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::ctype&lt;CharT&gt;::</span>widen, do_widen</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -397,8 +389,8 @@ CharT widen<span class="br0">(</span> <span class="kw4">char</span> c <span clas
     <span class="kw4">auto</span><span class="sy3">&amp;</span> f2 <span class="sy1">=</span> <a href="../use_facet.html"><span class="kw1901">std::<span class="me2">use_facet</span></span></a><span class="sy1">&lt;</span><a href="../ctype.html"><span class="kw1942">std::<span class="me2">ctype</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;&gt;</span><span class="br0">(</span><a href="../locale.html"><span class="kw1898">std::<span class="me2">locale</span></span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"在捷克语 UTF-8 本地环境下：<span class="es1">\n</span>"</span><span class="sy4">;</span>
     try_widen<span class="br0">(</span>f2, <span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span>
-    try_widen<span class="br0">(</span>f2, <span class="st0">'<span class="es2">\xdf</span>'</span><span class="br0">)</span><span class="sy4">;</span> 
-    try_widen<span class="br0">(</span>f2, <span class="st0">'<span class="es2">\xec</span>'</span><span class="br0">)</span><span class="sy4">;</span> 
+    try_widen<span class="br0">(</span>f2, <span class="st0">'<span class="es2">\xdf</span>'</span><span class="br0">)</span><span class="sy4">;</span>
+    try_widen<span class="br0">(</span>f2, <span class="st0">'<span class="es2">\xec</span>'</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>输出：
 </p>
@@ -409,7 +401,7 @@ CharT widen<span class="br0">(</span> <span class="kw4">char</span> c <span clas
 在捷克语 UTF-8 本地环境下：
 单字节字符 0x61 加宽为 to 0x61
 单字节字符 0xdf 加宽为 to 0xffffffff
-单字节字符 0xec 加宽为 to 0xffffffff</pre></div></div> 
+单字节字符 0xec 加宽为 to 0xffffffff</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E7.BC.BA.E9.99.B7.E6.8A.A5.E5.91.8A">缺陷报告</span></h3>
 <p>下列更改行为的缺陷报告追溯地应用于以前出版的 C++ 标准。
@@ -452,7 +444,7 @@ CharT widen<span class="br0">(</span> <span class="kw4">char</span> c <span clas
 <td>  若可能，加宽单字节窄字符为宽字符 <br> <span class="t-mark" style="white-space: nowrap;">(函数)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 8039/1000000
 Preprocessor generated node count: 12079/1000000

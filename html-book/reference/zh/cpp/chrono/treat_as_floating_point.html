@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::chrono::</span>treat_as_floating_point</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -309,13 +301,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;thread&gt;</span>
  
-<span class="kw4">void</span> timed_piece_of_code<span class="br0">(</span><span class="br0">)</span> 
+<span class="kw4">void</span> timed_piece_of_code<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="duration.html"><span class="kw998">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">milliseconds</span></span></a> simulated_work<span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../thread/sleep_for.html"><span class="kw2152">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span>simulated_work<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">auto</span> start <span class="sy1">=</span> <a href="high_resolution_clock/now.html"><span class="kw2672">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">high_resolution_clock</span><span class="sy4">::</span><span class="me2">now</span></span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
  
@@ -325,10 +317,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw4">auto</span> stop <span class="sy1">=</span> <a href="high_resolution_clock/now.html"><span class="kw2672">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">high_resolution_clock</span><span class="sy4">::</span><span class="me2">now</span></span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
  
     <span class="co1">// 浮点毫秒类型</span>
-    <span class="kw1">using</span> FpMilliseconds <span class="sy1">=</span> 
+    <span class="kw1">using</span> FpMilliseconds <span class="sy1">=</span>
         <a href="duration.html"><span class="kw995">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">duration</span></span></a><span class="sy1">&lt;</span><span class="kw4">float</span>, std<span class="sy4">::</span><span class="me2">chrono</span><span class="sy4">::</span><span class="me2">milliseconds</span><span class="sy4">::</span><span class="me2">period</span><span class="sy1">&gt;</span><span class="sy4">;</span>
  
-    static_assert<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">chrono</span><span class="sy4">::</span><span class="me2">treat_as_floating_point</span><span class="sy1">&lt;</span>FpMilliseconds<span class="sy4">::</span><span class="me2">rep</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span>, 
+    static_assert<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">chrono</span><span class="sy4">::</span><span class="me2">treat_as_floating_point</span><span class="sy1">&lt;</span>FpMilliseconds<span class="sy4">::</span><span class="me2">rep</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span>,
                   <span class="st0">"Rep required to be floating point"</span><span class="br0">)</span><span class="sy4">;</span>
  
     <span class="co1">// 注意此处不允许隐式转换</span>
@@ -350,13 +342,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">运行一些耗时代码...
 计时统计:
   使用默认表示的按毫秒计时间: 2
-  使用浮点表示的按毫秒计时间: 2.57307</pre></div></div> 
+  使用浮点表示的按毫秒计时间: 2.57307</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
 <tr><td></td></tr></table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 7673/1000000
 Preprocessor generated node count: 10172/1000000

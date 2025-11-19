@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::enable_shared_from_this&lt;T&gt;::</span>shared_from_this</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -337,7 +329,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">struct</span> Foo <span class="sy4">:</span> <span class="kw1">public</span> <a href="../enable_shared_from_this.html"><span class="kw746">std::<span class="me2">enable_shared_from_this</span></span></a><span class="sy1">&lt;</span>Foo<span class="sy1">&gt;</span>
 <span class="br0">{</span>
     Foo<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Foo::Foo<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
-    ~Foo<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Foo::~Foo<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span> 
+    ~Foo<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Foo::~Foo<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
     <a href="../shared_ptr.html"><span class="kw736">std::<span class="me2">shared_ptr</span></span></a><span class="sy1">&lt;</span>Foo<span class="sy1">&gt;</span> getFoo<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> shared_from_this<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
@@ -351,13 +343,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
         pf1 <span class="sy1">=</span> pf2<span class="sy2">-</span><span class="sy1">&gt;</span>getFoo<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// 与 pf2 的对象共享所有权</span>
     <span class="br0">}</span>
  
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"pf2 已经消失<span class="es1">\n</span>"</span><span class="sy4">;</span>   
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"pf2 已经消失<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Foo::Foo
 pf2 已经消失
-Foo::~Foo</pre></div></div> 
+Foo::~Foo</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -368,7 +360,7 @@ Foo::~Foo</pre></div></div>
 <td>   拥有共享对象所有权语义的智能指针  <br> <span class="t-mark" style="white-space: nowrap;">(类模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9317/1000000
 Preprocessor generated node count: 11578/1000000

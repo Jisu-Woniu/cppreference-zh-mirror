@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading">数据并行类型 (SIMD) <span class="t-mark-rev t-since-cxx26" style="white-space: nowrap;">(C++26 起)</span></h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -516,7 +508,7 @@ concept <span class="coMULTI">/*simd-floating-point*/</span> <span class="sy1">=
     <a href="../concepts/same_as.html"><span class="kw2933">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>V,
                  std<span class="sy4">::</span><span class="me2">datapar</span><span class="sy4">::</span><span class="me2">basic_simd</span><span class="sy1">&lt;</span><span class="kw1">typename</span> V<span class="sy4">::</span><span class="me2">value_type</span>,
                  <span class="kw1">typename</span> V<span class="sy4">::</span><span class="me2">abi_type</span><span class="sy1">&gt;&gt;</span> <span class="sy3">&amp;&amp;</span>
-    <a href="../types/is_default_constructible.html"><span class="kw534">std::<span class="me2">is_default_constructible_v</span></span></a><span class="sy1">&lt;</span>V<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> 
+    <a href="../types/is_default_constructible.html"><span class="kw534">std::<span class="me2">is_default_constructible_v</span></span></a><span class="sy1">&lt;</span>V<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
     <a href="../concepts/floating_point.html"><span class="kw2941">std::<span class="me2">floating_point</span></span></a><span class="sy1">&lt;</span><span class="kw1">typename</span> V<span class="sy4">::</span><span class="me2">value_type</span><span class="sy1">&gt;</span><span class="sy4">;</span></pre></div></div></div>
 <div class="t-li1"><span class="t-li">9)</span> The concept <span class="mw-geshi cpp source-cpp"><span class="coMULTI">/*math-floating-point*/</span></span> is defined as:
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span>... <span class="me1">Ts</span> <span class="sy1">&gt;</span>
@@ -658,14 +650,14 @@ concept <span class="coMULTI">/*reduction-binary-operation*/</span> <span class=
 <span class="br0">}</span></pre></div></div>
 <p>输出：
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">a: 1 1 1 1 
-b: -2 -1 0 1 
-c: -1 0 1 2 
-d: 1 0 1 2 
-e: 1 0 1 4 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">a: 1 1 1 1
+b: -2 -1 0 1
+c: -1 0 1 2
+d: 1 0 1 2
+e: 1 0 1 4
 内积: 6
-x: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
-cos²(x) + sin²(x): 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</pre></div></div> 
+x: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+cos²(x) + sin²(x): 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -687,7 +679,7 @@ cos²(x) + sin²(x): 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</pre></div></div>
 <td>TS 实现抵达 <a rel="nofollow" class="external text" href="https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=libstdc%2B%2B-v3/include/experimental/simd;hb=HEAD">GCC/libstdc++</a> (GCC-11 提供 <code>std::experimental::simd</code>) — gcc.gnu.org
 </td></tr></table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 12333/1000000
 Preprocessor generated node count: 17595/1000000

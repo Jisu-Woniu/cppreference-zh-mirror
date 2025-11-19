@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::experimental::ranges::</span>not_equal_to</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -285,7 +277,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">2)</span> 比较 <code>t</code> 与 <code>u</code>。等价于 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">return</span> <span class="sy3">!</span><a href="equal_to.html"><span class="kw2841">ranges::<span class="me2">equal_to</span></span></a><span class="sy1">&lt;&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span><a href="../../../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span>, <a href="../../../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></span></span>。
 </div></div>
 <h3><span class="mw-headline" id=".E6.B3.A8.E8.A7.A3">注解</span></h3>
-<p>不同于 <span class="t-lc"><a href="../../../utility/functional/not_equal_to.html" title="cpp/utility/functional/not equal to">std::not_equal_to</a></span>，<code>ranges::not_equal_to</code> 要求 <code>==</code> 与 <code>!=</code> 均合法（通过 <a href="../concepts/EqualityComparable.html" title="cpp/experimental/ranges/concepts/EqualityComparable"><code>EqualityComparable</code></a> 和 <a href="../concepts/EqualityComparable.html" title="cpp/experimental/ranges/concepts/EqualityComparable"><code>EqualityComparableWith</code></a> 制约），而它完全用 
+<p>不同于 <span class="t-lc"><a href="../../../utility/functional/not_equal_to.html" title="cpp/utility/functional/not equal to">std::not_equal_to</a></span>，<code>ranges::not_equal_to</code> 要求 <code>==</code> 与 <code>!=</code> 均合法（通过 <a href="../concepts/EqualityComparable.html" title="cpp/experimental/ranges/concepts/EqualityComparable"><code>EqualityComparable</code></a> 和 <a href="../concepts/EqualityComparable.html" title="cpp/experimental/ranges/concepts/EqualityComparable"><code>EqualityComparableWith</code></a> 制约），而它完全用
 <span class="t-lc">ranges::equal_to</span> 定义。然而，实现可以自由地直接使用 <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy3">!</span><span class="sy1">=</span></span></span>，因为这些概念要求 <code>==</code> 与 <code>!=</code> 的结果一致。
 </p>
 <h3><span class="mw-headline" id=".E7.A4.BA.E4.BE.8B">示例</span></h3>
@@ -299,7 +291,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  实现 <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy3">!</span><span class="sy1">=</span> y</span></span> 的函数对象 <br> <span class="t-mark" style="white-space: nowrap;">(类模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 3992/1000000
 Preprocessor generated node count: 12647/1000000

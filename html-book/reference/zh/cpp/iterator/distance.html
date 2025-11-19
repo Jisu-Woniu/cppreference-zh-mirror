@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::</span>distance</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -361,7 +353,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11 起)</span></td></tr>
 </table>
 <h3><span class="mw-headline" id=".E5.A4.8D.E6.9D.82.E5.BA.A6">复杂度</span></h3>
-<p>线性。 
+<p>线性。
 </p><p>然而，如果 <code>InputIt</code> 额外满足<a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-style:italic">老式随机访问迭代器</span> <span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">(LegacyRandomAccessIterator)</span> </a>的要求，那么复杂度是常数。
 </p>
 <h3><span class="mw-headline" id=".E5.8F.AF.E8.83.BD.E7.9A.84.E5.AE.9E.E7.8E.B0">可能的实现</span></h3>
@@ -379,7 +371,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
     <span class="kw4">constexpr</span> <span class="co1">// C++17 起要求</span>
-    <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw654">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> 
+    <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw654">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span>
         do_distance<span class="br0">(</span>It first, It last, <a href="iterator_tags.html"><span class="kw655">std::<span class="me2">input_iterator_tag</span></span></a><span class="br0">)</span>
     <span class="br0">{</span>
         <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw654">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> result <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
@@ -393,7 +385,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
     <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
     <span class="kw4">constexpr</span> <span class="co1">// C++17 起要求</span>
-    <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw654">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> 
+    <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw654">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span>
         do_distance<span class="br0">(</span>It first, It last, <a href="iterator_tags.html"><span class="kw659">std::<span class="me2">random_access_iterator_tag</span></span></a><span class="br0">)</span>
     <span class="br0">{</span>
         <span class="kw1">return</span> last <span class="sy2">-</span> first<span class="sy4">;</span>
@@ -402,7 +394,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <span class="co1">// C++17 起</span>
-<span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw654">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> 
+<span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw654">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span>
     distance<span class="br0">(</span>It first, It last<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">return</span> detail<span class="sy4">::</span><span class="me2">do_distance</span><span class="br0">(</span>first, last,
@@ -441,7 +433,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;iterator&gt;</span>
 <span class="co2">#include &lt;vector&gt;</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../container/vector.html"><span class="kw1271">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">1</span>, <span class="nu0">4</span><span class="br0">}</span><span class="sy4">;</span>
     <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"distance(first, last) = "</span>
@@ -458,7 +450,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">distance(first, last) = 3
-distance(last, first) = -3</pre></div></div> 
+distance(last, first) = -3</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E7.BC.BA.E9.99.B7.E6.8A.A5.E5.91.8A">缺陷报告</span></h3>
 <p>下列更改行为的缺陷报告追溯地应用于以前出版的 C++ 标准。
@@ -501,7 +493,7 @@ distance(last, first) = -3</pre></div></div>
 <td>  返回迭代器与哨位间的距离，或范围起始与结尾间的距离 <br> <span class="t-mark" style="white-space: nowrap;">(算法函数对象)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9107/1000000
 Preprocessor generated node count: 12916/1000000

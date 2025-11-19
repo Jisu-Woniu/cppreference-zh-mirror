@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::variant&lt;Types...&gt;::</span>valueless_by_exception</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -296,7 +288,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <ul><li> （保证）在<a href="operator%3D.html" title="cpp/utility/variant/operator=">移动赋值</a>中抛出异常
 </li><li> （可选）在<a href="operator%3D.html" title="cpp/utility/variant/operator=">复制赋值</a>中抛出异常
 </li><li> （可选）在类型更改<a href="operator%3D.html" title="cpp/utility/variant/operator=">赋值</a>期间抛出异常
-</li><li> （可选）在类型更改 <a href="emplace.html" title="cpp/utility/variant/emplace"><code>emplace</code></a> 期间抛出异常 
+</li><li> （可选）在类型更改 <a href="emplace.html" title="cpp/utility/variant/emplace"><code>emplace</code></a> 期间抛出异常
 </li></ul>
 <p>因为变体决不容许分配动态内存，故在这些情况下不可能保留并因此无法恢复先前的值。标为“可选”的情形，如果类型提供了不抛出移动，并且实现首先在栈上构造新值然后再把它移动到变体中，就可以避免抛出异常。
 </p><p>这也适用于非类类型的变体：
@@ -365,7 +357,7 @@ v.<span class="me1">emplace</span><span class="sy1">&lt;</span><span class="nu0"
 <p>可能的输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1) 异常: 复制构造函数
-2) 异常: std::get: variant is valueless</pre></div></div> 
+2) 异常: std::get: variant is valueless</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -386,7 +378,7 @@ v.<span class="me1">emplace</span><span class="sy1">&lt;</span><span class="nu0"
 <td>  非法地访问 <code>variant</code> 的值时抛出的异常 <br> <span class="t-mark" style="white-space: nowrap;">(类)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 7197/1000000
 Preprocessor generated node count: 11480/1000000

@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><code>virtual</code> 函数说明符</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -237,8 +229,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">替代表示</a></td></tr>
 <tr class="t-nv-h2"><td colspan="5"><a href="expressions.html#.E5.AD.97.E9.9D.A2.E9.87.8F" title="cpp/language/expressions">字面量</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">布尔</a> - <a href="integer_literal.html" title="cpp/language/integer literal">整数</a> - <a href="floating_literal.html" title="cpp/language/floating literal">浮点</a></td></tr>   
-<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">字符</a> - <a href="string_literal.html" title="cpp/language/string literal">字符串</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr> 
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">布尔</a> - <a href="integer_literal.html" title="cpp/language/integer literal">整数</a> - <a href="floating_literal.html" title="cpp/language/floating literal">浮点</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">字符</a> - <a href="string_literal.html" title="cpp/language/string literal">字符串</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">用户定义</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 <tr class="t-nv-h1"><td colspan="5">工具</td></tr>
 <tr class="t-nv"><td colspan="5"><a href="attributes.html" title="cpp/language/attributes">属性</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
@@ -298,7 +290,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><a href="class_template.html" title="cpp/language/class template">类模板</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="function_template.html" title="cpp/language/function template">函数模板</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">模板特化</a></td></tr>   
+<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">模板特化</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="pack.html" title="cpp/language/pack">形参包</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5">杂项</td></tr>
@@ -633,7 +625,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>一条有用的方针是，凡是当涉及 delete 表达式<span class="t-rev-inl t-since-cxx11"><span>，例如在 <span class="t-lc"><a href="../memory/unique_ptr.html" title="cpp/memory/unique ptr">std::unique_ptr</a></span> 中隐式使用</span><span><span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11 起)</span></span></span>时，任何基类的析构函数必须为<a rel="nofollow" class="external text" href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#discussion-make-base-class-destructors-public-and-virtual-or-protected-and-nonvirtual">公开且虚，或受保护且非虚</a>。
 </p>
 <h3><span class="mw-headline" id=".E5.9C.A8.E6.9E.84.E9.80.A0.E5.92.8C.E6.9E.90.E6.9E.84.E6.9C.9F.E9.97.B4">在构造和析构期间</span></h3>
-<p>当从构造函数或从析构函数中直接或间接调用虚函数（包括在类的非静态数据成员的构造或析构期间，例如在成员<a href="constructor.html" title="cpp/language/initializer list" class="mw-redirect">初始化式列表</a>中），且对其实施调用的对象是正在构造或析构中的对象（即<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>）时，为了防止通过虚函数访问已处于<a href="lifetime.html" title="cpp/language/lifetime">生存期</a>之外的派生类数据成员，所调用的虚函数是该构造函数或析构函数所在类中的最终覆盖函数，而非进一步的派生类中的覆盖函数。 
+<p>当从构造函数或从析构函数中直接或间接调用虚函数（包括在类的非静态数据成员的构造或析构期间，例如在成员<a href="constructor.html" title="cpp/language/initializer list" class="mw-redirect">初始化式列表</a>中），且对其实施调用的对象是正在构造或析构中的对象（即<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>）时，为了防止通过虚函数访问已处于<a href="lifetime.html" title="cpp/language/lifetime">生存期</a>之外的派生类数据成员，所调用的虚函数是该构造函数或析构函数所在类中的最终覆盖函数，而非进一步的派生类中的覆盖函数。
 换言之，在构造和析构期间，进一步的派生类并不存在，如同<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>的动态类型是正在构造的类的静态类型（动态派发不在继承层级下传）。
 </p><p>当构建具有多个分支的复杂类时，在属于一个分支的构造函数内，多态被限制到该类及其基类：如果它获得了指向这个子层级之外的某个基类子对象的指针或引用并试图进行虚函数调用（例如通过显式成员访问），那么行为未定义：
 </p>
@@ -740,7 +732,7 @@ B<span class="sy4">::</span><span class="me2">B</span><span class="br0">(</span>
 <td> 声明方法不能被覆盖，或类不能被派生</td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 3460/1000000
 Preprocessor generated node count: 8856/1000000

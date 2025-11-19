@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::filesystem::path::</span>make_preferred</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -296,7 +288,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
 </p>
 <h3><span class="mw-headline" id=".E5.BC.82.E5.B8.B8">异常</span></h3>
-<p>可能会抛出由实现定义的异常。 
+<p>可能会抛出由实现定义的异常。
 </p>
 <h3><span class="mw-headline" id=".E7.A4.BA.E4.BE.8B">示例</span></h3>
 <div class="t-example"><p>Windows 可以用 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">/</span></span></span> 为分隔符，但首选 <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span>，因此 <span class="t-c"><span class="mw-geshi cpp source-cpp">make_preferred</span></span> 会将前向斜杠转换为反斜杠。另一方面，POSIX 不使用 <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span> 作为分隔符，因为反斜杠是合法的文件名字符——Windows 路径在 POSIX 上实际上会指代名字为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"a<span class="es1">\\</span>b<span class="es1">\\</span>c"</span></span></span> 的文件。由于这个原因，不转换其“分隔符”。</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">运行此代码</div></div>
@@ -325,7 +317,7 @@ POSIX 路径: "a/b/c" -&gt; "a\\b\\c"
  
 // POSIX 上
 Windows 路径: "a\\b\\c" -&gt; "a\\b\\c"
-POSIX 路径: "a/b/c" -&gt; "a/b/c"</pre></div></div> 
+POSIX 路径: "a/b/c" -&gt; "a/b/c"</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -336,7 +328,7 @@ POSIX 路径: "a/b/c" -&gt; "a/b/c"</pre></div></div>
 <td>  在可移植的 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">/</span></span></span> 之外可用的另一种目录分隔符。Windows 上它是反斜杠字符 <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span>。POSIX 上它是与可移植分隔符相同的斜杠 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">/</span></span></span> <br> <span class="t-mark" style="white-space: nowrap;">(公开静态成员常量)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 7123/1000000
 Preprocessor generated node count: 10486/1000000

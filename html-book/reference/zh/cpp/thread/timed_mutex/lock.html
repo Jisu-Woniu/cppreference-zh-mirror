@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::timed_mutex::</span>lock</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -340,11 +332,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">int</span> g_num <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>  <span class="co1">// 为 g_num_mutex 所保护</span>
 <a href="../mutex.html"><span class="kw2158">std::<span class="me2">mutex</span></span></a> g_num_mutex<span class="sy4">;</span>
  
-<span class="kw4">void</span> slow_increment<span class="br0">(</span><span class="kw4">int</span> id<span class="br0">)</span> 
+<span class="kw4">void</span> slow_increment<span class="br0">(</span><span class="kw4">int</span> id<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">3</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
     <span class="br0">{</span>
-        g_num_mutex.<span class="me1">lock</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> 
+        g_num_mutex.<span class="me1">lock</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
         <span class="sy2">++</span>g_num<span class="sy4">;</span>
         <span class="co1">// 注意，此互斥体也同步输出</span>
         <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"id: "</span> <span class="sy1">&lt;&lt;</span> id <span class="sy1">&lt;&lt;</span> <span class="st0">", g_num: "</span> <span class="sy1">&lt;&lt;</span> g_num <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
@@ -368,7 +360,7 @@ id: 1, g_num: 2
 id: 1, g_num: 3
 id: 0, g_num: 4
 id: 0, g_num: 5
-id: 1, g_num: 6</pre></div></div> 
+id: 1, g_num: 6</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -399,7 +391,7 @@ id: 1, g_num: 6</pre></div></div>
 
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9891/1000000
 Preprocessor generated node count: 13101/1000000

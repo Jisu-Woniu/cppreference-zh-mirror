@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::</span>launder</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -406,7 +398,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>正式而言，给定
 </p>
 <ul><li> 表示内存中一个字节的地址 <code>A</code> 的指针 <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span>
-</li><li> 一个位于地址 <code>A</code> 的对象 <span class="t-c"><span class="mw-geshi cpp source-cpp">x</span></span> 
+</li><li> 一个位于地址 <code>A</code> 的对象 <span class="t-c"><span class="mw-geshi cpp source-cpp">x</span></span>
 </li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">x</span></span> 在它的<a href="../language/lifetime.html" title="cpp/language/lifetime">生存期</a>内
 </li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">x</span></span> 的类型与 <code>T</code> 相同，忽略每层的 cv 限定符
 </li><li> 能通过结果触及的每个字节都能通过 <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span> 触及（如果字节在与 <span class="t-c"><span class="mw-geshi cpp source-cpp">y</span></span> <a href="../language/static_cast.html#.E6.8C.87.E9.92.88.E5.8F.AF.E4.BB.A5.E4.BA.92.E7.9B.B8.E8.BD.AC.E6.8D.A2" title="cpp/language/static cast">指针可以互相转换</a>的对象 <span class="t-c"><span class="mw-geshi cpp source-cpp">z</span></span> 的存储内，或在以 <span class="t-c"><span class="mw-geshi cpp source-cpp">z</span></span> 为元素的直接外围数组内，那么能通过指向对象 <span class="t-c"><span class="mw-geshi cpp source-cpp">y</span></span> 的指针触及这些字节）。
@@ -428,7 +420,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">auto</span> p <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">launder</span><span class="br0">(</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>x<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
  
 <span class="kw4">int</span> x2<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span>
-<span class="kw4">auto</span> p2 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">launder</span><span class="br0">(</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>x2<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> 
+<span class="kw4">auto</span> p2 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">launder</span><span class="br0">(</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>x2<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co1">// 未定义行为：可通过产生的指向 x2[0] 的指针触及 x2[1]，但不可从源触及</span>
  
 <span class="kw1">struct</span> X <span class="br0">{</span> <span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span> <span class="br0">}</span> x3, x4<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// 标准布局；假定无填充</span>
@@ -438,7 +430,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co1">// （它与 x4[0] 指针间可转换）触及 x4[1]，但不可从源触及</span>
  
 <span class="kw1">struct</span> Y <span class="br0">{</span> <span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span> <span class="kw4">double</span> y<span class="sy4">;</span> <span class="br0">}</span> x5<span class="sy4">;</span>
-<span class="kw4">auto</span> p5 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">launder</span><span class="br0">(</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>x5.<span class="me1">a</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> 
+<span class="kw4">auto</span> p5 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">launder</span><span class="br0">(</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>x5.<span class="me1">a</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co1">// 未定义行为：可通过产生的指向 x5.a 的指针触及 x5.y，但不可从源触及</span></pre></div></div>
 <h3><span class="mw-headline" id=".E7.A4.BA.E4.BE.8B">示例</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">运行此代码</div></div>
@@ -522,7 +514,7 @@ static_assert<span class="br0">(</span>sizeof<span class="br0">(</span>Derived<s
 <td> 已禁止
 </td></tr></table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 13804/1000000
 Preprocessor generated node count: 13801/1000000

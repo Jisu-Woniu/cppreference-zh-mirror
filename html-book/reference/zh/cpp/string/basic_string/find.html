@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::basic_string&lt;CharT,Traits,Allocator&gt;::</span>find</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -291,7 +283,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li"></span> 此重载只有在 <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../types/is_convertible.html"><span class="kw596">std::<span class="me2">is_convertible_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> StringViewLike<span class="sy3">&amp;</span>,</span><br><span class="mw-geshi cpp source-cpp">                      <a href="../basic_string_view.html"><span class="kw1249">std::<span class="me2">basic_string_view</span></span></a><span class="sy1">&lt;</span>CharT, Traits<span class="sy1">&gt;&gt;</span></span></span> 是 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> 且 <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../types/is_convertible.html"><span class="kw596">std::<span class="me2">is_convertible_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> StringViewLike<span class="sy3">&amp;</span>, <span class="kw4">const</span> CharT<span class="sy2">*</span><span class="sy1">&gt;</span></span></span> 是 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> 时才会参与重载决议。</div>
 <p>正式而言，如果以下表达式都是 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>，那么在位置 <span class="t-c"><span class="mw-geshi cpp source-cpp">xpos</span></span> <i>找到</i> ﻿子串 <span class="t-c"><span class="mw-geshi cpp source-cpp">str</span></span>：
 </p>
-<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">xpos <span class="sy1">&gt;=</span> pos</span></span> 
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">xpos <span class="sy1">&gt;=</span> pos</span></span>
 </li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">xpos <span class="sy2">+</span> str.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;=</span> size<span class="br0">(</span><span class="br0">)</span></span></span>
 </li><li> 对于 <span class="t-c"><span class="mw-geshi cpp source-cpp">str</span></span> 中所有位置 <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span>，<span class="t-c"><span class="mw-geshi cpp source-cpp">Traits<span class="sy4">::</span><span class="me2">eq</span><span class="br0">(</span>at<span class="br0">(</span>xpos <span class="sy2">+</span> n<span class="br0">)</span>, str.<span class="me1">at</span><span class="br0">(</span>n<span class="br0">)</span><span class="br0">)</span></span></span>
 </li></ul>
@@ -400,7 +392,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1) 在位置 n = 2 找到，substr(2) = "is is a string"
 2) 在位置 n = 5 找到，substr(5) = "is a string"
 3) 在位置 n = 8 找到，substr(8) = "a string"
-4) 没有找到！n == npos</pre></div></div> 
+4) 没有找到！n == npos</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E7.BC.BA.E9.99.B7.E6.8A.A5.E5.91.8A">缺陷报告</span></h3>
 <p>下列更改行为的缺陷报告追溯地应用于以前出版的 C++ 标准。
@@ -510,7 +502,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>   搜索元素范围的首次出现  <br> <span class="t-mark" style="white-space: nowrap;">(函数模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9825/1000000
 Preprocessor generated node count: 14171/1000000

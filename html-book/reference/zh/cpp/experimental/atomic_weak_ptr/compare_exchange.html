@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::experimental::atomic_weak_ptr&lt;T&gt;::</span>compare_exchange_strong, <span style="font-size:0.8em; line-height:125%">std::experimental::atomic_weak_ptr&lt;T&gt;::</span>compare_exchange_weak</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -231,7 +223,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>原子地比较 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> 中的底层 <code>weak_ptr</code> 和 <span class="t-c"><span class="mw-geshi cpp source-cpp">expected</span></span>，且若二者等价，则以 <span class="t-c"><span class="mw-geshi cpp source-cpp">desired</span></span> 取代前者（实施读修改写操作）。否则，加载 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> 存储的实际值到 <span class="t-c"><span class="mw-geshi cpp source-cpp">expected</span></span> 中（实施加载操作）。此替换如同以 <code>weak_ptr</code> 的复制或移动赋值运算符来进行（选择合适者）。
 </p><p>当且仅当两个 <code>weak_ptr</code> 存储相同的指针值且共享所有权时，二者等价。
 </p><p>读修改写操作和加载操作的内存模型分别为 <span class="t-c"><span class="mw-geshi cpp source-cpp">success</span></span> 和 <span class="t-c"><span class="mw-geshi cpp source-cpp">failure</span></span>。对于重载 <span class="t-v">(3,4,7,8)</span>，<span class="t-c"><span class="mw-geshi cpp source-cpp">order</span></span> 同时用于读修改写和加载操作，但当 <span class="t-c"><span class="mw-geshi cpp source-cpp">order <span class="sy1">==</span> <a href="../../atomic/memory_order.html"><span class="kw2101">std::<span class="me2">memory_order_acq_rel</span></span></a></span></span> 或 <span class="t-c"><span class="mw-geshi cpp source-cpp">order <span class="sy1">==</span> <a href="../../atomic/memory_order.html"><span class="kw2100">std::<span class="me2">memory_order_release</span></span></a></span></span> 时，分别在加载操作使用 <span class="t-lc"><a href="../../atomic/memory_order.html" title="cpp/atomic/memory order">std::memory_order_acquire</a></span> 和 <span class="t-lc"><a href="../../atomic/memory_order.html" title="cpp/atomic/memory order">std::memory_order_relaxed</a></span>。
-</p><p>弱版本 <span class="t-v">(1-4)</span> 可能发生假性失败。 
+</p><p>弱版本 <span class="t-v">(1-4)</span> 可能发生假性失败。
 </p>
 <h3><span class="mw-headline" id=".E5.8F.82.E6.95.B0">参数</span></h3>
 <table class="t-par-begin">
@@ -282,7 +274,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>对于重载 <span class="t-v">(2,4,6,8)</span>，仅当比较交换操作返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> 时才从 <span class="t-c"><span class="mw-geshi cpp source-cpp">desired</span></span> 移动；此移动在原子更新步骤之后发生。
 </p>
 <h3><span class="mw-headline" id=".E6.B3.A8.E8.A7.A3">注解</span></h3>
-<p>允许函数的弱形式 <span class="t-v">(1-4)</span> 发生假性失败，就是说，即使 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> 和 <span class="t-c"><span class="mw-geshi cpp source-cpp">expected</span></span> 等价时其表现如同它们不等价。在循环中使用比较交换操作时，弱版本在一些平台上可能产生更好的性能。 
+<p>允许函数的弱形式 <span class="t-v">(1-4)</span> 发生假性失败，就是说，即使 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> 和 <span class="t-c"><span class="mw-geshi cpp source-cpp">expected</span></span> 等价时其表现如同它们不等价。在循环中使用比较交换操作时，弱版本在一些平台上可能产生更好的性能。
 </p>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -293,7 +285,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  为 <code>std::shared_ptr</code> 特化的原子操作 <br> <span class="t-mark" style="white-space: nowrap;">(函数模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 4346/1000000
 Preprocessor generated node count: 8777/1000000

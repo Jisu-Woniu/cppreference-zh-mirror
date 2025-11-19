@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::auto_ptr&lt;T&gt;::</span>operator auto_ptr&lt;Y&gt;</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -314,7 +306,7 @@ operator auto_ptr<span class="sy1">&lt;</span>Y<span class="sy1">&gt;</span><spa
 <h3><span class="mw-headline" id=".E6.B3.A8.E8.A7.A3">注解</span></h3>
 <p>源自 <code>auto_ptr_ref</code> 的构造函数和复制赋值运算符允许从无名临时量进行 <span class="t-lc"><a href="../auto_ptr.html" title="cpp/memory/auto ptr">std::auto_ptr</a></span> 的复制构造和赋值。因为其复制构造函数与复制赋值运算符以非 const 引用接收实参，所以它们不能直接绑定右值。然而，可以执行<strong class="selflink">用户定义转换</strong>（释放原 <code>auto_ptr</code>）之后再调用按值接收 <code>auto_ptr_ref</code> 的构造函数或复制赋值运算符做到这点。这是一种<a href="../../utility/move.html" title="cpp/utility/move">移动语义</a>的早期实现。
 </p>
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9409/1000000
 Preprocessor generated node count: 10517/1000000

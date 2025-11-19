@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::valarray&lt;T&gt;::</span>operator[]</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -383,13 +375,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">3,5,7,9)</span> 含有被选择项副本的 <span class="t-lc"><a href="../valarray.html" title="cpp/numeric/valarray">std::valarray</a></span> 对象</div>
 <div class="t-li1"><span class="t-li">4,6,8,10)</span> 包含到被选择项引用的对应数据结构</div>
 <h3><span class="mw-headline" id=".E5.BC.82.E5.B8.B8">异常</span></h3>
-<p>可能会抛出由实现定义的异常。 
+<p>可能会抛出由实现定义的异常。
 </p>
 <h3><span class="mw-headline" id=".E6.B3.A8.E8.A7.A3">注解</span></h3>
 <p>对于适当的 <span class="t-lc"><a href="../valarray.html" title="cpp/numeric/valarray">std::valarray</a></span> 值 <span class="t-c"><span class="mw-geshi cpp source-cpp">a</span></span>、<span class="t-c"><span class="mw-geshi cpp source-cpp">b</span></span> 和适当的 <span class="t-lc"><a href="../../types/size_t.html" title="cpp/types/size t">std::size_t</a></span> 值 <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>、<span class="t-c"><span class="mw-geshi cpp source-cpp">j</span></span>，以下所有表达式始终会求值为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>：
 </p>
 <div class="t-li1"><span class="t-li">1)</span> 对于非 const 的 <span class="t-c"><span class="mw-geshi cpp source-cpp">a</span></span>，<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>a<span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">=</span> q, a<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span> <span class="sy1">==</span> q</span></span></div>
-<div class="t-li1"><span class="t-li">2)</span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span>a<span class="br0">[</span>i <span class="sy2">+</span> j<span class="br0">]</span> <span class="sy1">==</span> <span class="sy3">&amp;</span>a<span class="br0">[</span>i<span class="br0">]</span> <span class="sy2">+</span> j</span></span> 
+<div class="t-li1"><span class="t-li">2)</span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span>a<span class="br0">[</span>i <span class="sy2">+</span> j<span class="br0">]</span> <span class="sy1">==</span> <span class="sy3">&amp;</span>a<span class="br0">[</span>i<span class="br0">]</span> <span class="sy2">+</span> j</span></span>
 <ul><li>这表示 <span class="t-lc"><a href="../valarray.html" title="cpp/numeric/valarray">std::valarray</a></span> 的元素在内存中相邻。</li></ul></div>
 
 <div class="t-li1"><span class="t-li">3)</span> 对于每对不是另一方的别名的对象 <span class="t-c"><span class="mw-geshi cpp source-cpp">a</span></span> 和 <span class="t-c"><span class="mw-geshi cpp source-cpp">b</span></span>，<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span>a<span class="br0">[</span>i<span class="br0">]</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="sy3">&amp;</span>b<span class="br0">[</span>j<span class="br0">]</span></span></span>
@@ -414,7 +406,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;valarray&gt;</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../valarray.html"><span class="kw1476">std::<span class="me2">valarray</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> data <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">0</span>, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">6</span>, <span class="nu0">7</span>, <span class="nu0">8</span>, <span class="nu0">9</span><span class="br0">}</span><span class="sy4">;</span>
  
@@ -428,14 +420,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="co1">// data[data &gt; 5] 的类型是 std::mask_array&lt;int&gt;</span>
  
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"在 v[v &gt; 5] = -1 后："</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> data.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span> 
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> data.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
         <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/setw.html"><span class="kw1801">std::<span class="me2">setw</span></span></a><span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> data<span class="br0">[</span>n<span class="br0">]</span><span class="sy4">;</span> <span class="co1">// 常规 operator[]</span>
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">初始 valarray：      0  1  2  3  4  5  6  7  8  9
-在 v[v &gt; 5] = -1 后：0  1  2  3  4  5 -1 -1 -1 -1</pre></div></div> 
+在 v[v &gt; 5] = -1 后：0  1  2  3  4  5 -1 -1 -1 -1</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E7.BC.BA.E9.99.B7.E6.8A.A5.E5.91.8A">缺陷报告</span></h3>
 <p>下列更改行为的缺陷报告追溯地应用于以前出版的 C++ 标准。
@@ -469,7 +461,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 此时行为未定义
 </td></tr></table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 7839/1000000
 Preprocessor generated node count: 11643/1000000

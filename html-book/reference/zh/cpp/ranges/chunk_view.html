@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::ranges::</span><span style="font-size:0.8em; line-height:125%">views::</span>chunk, <span style="font-size:0.8em; line-height:125%">std::ranges::</span>chunk_view</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -625,7 +617,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p><span class="t-lc">ranges::enable_borrowed_range</span> 的这项特化使得当底层视图 <code>V</code> 同时满足 <a href="forward_range.html" title="cpp/ranges/forward range"><code>forward_range</code></a> 和 <a href="borrowed_range.html" title="cpp/ranges/borrowed range"><code>borrowed_range</code></a> 时，<code>chunk_view</code> 满足<a href="borrowed_range.html" title="cpp/ranges/borrowed range"><code>borrowed_range</code></a> 
+<p><span class="t-lc">ranges::enable_borrowed_range</span> 的这项特化使得当底层视图 <code>V</code> 同时满足 <a href="forward_range.html" title="cpp/ranges/forward range"><code>forward_range</code></a> 和 <a href="borrowed_range.html" title="cpp/ranges/borrowed range"><code>borrowed_range</code></a> 时，<code>chunk_view</code> 满足<a href="borrowed_range.html" title="cpp/ranges/borrowed range"><code>borrowed_range</code></a>
 </p>
 <h3><span class="mw-headline" id=".E6.B3.A8.E8.A7.A3">注解</span></h3>
 <p>如果 <code>V</code> 实现 <a href="input_range.html" title="cpp/ranges/input range"><code>input_range</code></a> <span class="t-v">(<a href="chunk_view.html#.E7.89.88.E6.9C.AC_1">1</a>)</span>，那么 <code>chunk_view</code> 的迭代器为一个专有类型：<a href="chunk_view/outer_iterator/value_type.html" title="cpp/ranges/chunk view/outer iterator/value type"><code><i>outer_iterator::value_type</i></code></a> 且它本身就是输入视图。
@@ -681,7 +673,7 @@ chunk(3): [1 2 3] [4 5 6]
 chunk(4): [1 2 3 4] [5 6]
 chunk(5): [1 2 3 4 5] [6]
 chunk(6): [1 2 3 4 5 6]
-chunk(7): [1 2 3 4 5 6]</pre></div></div> 
+chunk(7): [1 2 3 4 5 6]</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-c++23">
@@ -710,7 +702,7 @@ chunk(7): [1 2 3 4 5 6]</pre></div></div>
 <td>   第 M 个元素是另一  <a href="view.html" title="cpp/ranges/view"><code>view</code></a> 从第 M 到第 (M + N - 1) 个元素的 <a href="view.html" title="cpp/ranges/view"><code>view</code></a> 构成的 <a href="view.html" title="cpp/ranges/view"><code>view</code></a>  <br> <span class="t-mark" style="white-space: nowrap;">(类模板)</span> <span class="t-mark" style="white-space: nowrap;">(范围适配器对象)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 19934/1000000
 Preprocessor generated node count: 22271/1000000

@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::recursive_timed_mutex::</span>try_lock</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -291,7 +283,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody></table>
 <p>尝试锁定互斥体。立即返回。成功获得锁时返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>，否则返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>。
 </p><p>允许此函数虚假地失败而返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>，即使互斥体当前未被任何其他线程锁定。
-</p><p>线程可以重复调用 <code>try_lock</code>。对 <code>try_lock</code> 的成功调用增加所有权计数：线程调用 <span class="t-lc"><a href="unlock.html" title="cpp/thread/recursive timed mutex/unlock">unlock</a></span> 匹配次数后互斥体才会得到释放。  
+</p><p>线程可以重复调用 <code>try_lock</code>。对 <code>try_lock</code> 的成功调用增加所有权计数：线程调用 <span class="t-lc"><a href="unlock.html" title="cpp/thread/recursive timed mutex/unlock">unlock</a></span> 匹配次数后互斥体才会得到释放。
 </p><p>所有权层数的最大值是未指定的。若超出此数，则到 <code>try_lock</code> 的调用将返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>。
 </p><p>若此操作返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>，则同一互斥体上的先前 <span class="t-lc"><a href="unlock.html" title="cpp/thread/recursive timed mutex/unlock">unlock()</a></span> 操作<i>同步于</i>（定义于 <span class="t-lc"><a href="../../atomic/memory_order.html" title="cpp/atomic/memory order">std::memory_order</a></span>）它。注意若此操作返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>，则先前的 <span class="t-lc"><a href="lock.html" title="cpp/thread/recursive timed mutex/lock">lock()</a></span> 不与之同步。
 </p>
@@ -336,7 +328,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10235/1000000
 Preprocessor generated node count: 16542/1000000

@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::future&lt;T&gt;::</span>wait_until</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -315,7 +307,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p><code>wait_until</code> 等待结果变为可用。它阻塞直至抵达指定的 <span class="t-c"><span class="mw-geshi cpp source-cpp">timeout_time</span></span>，或结果变为可用，两者先达成者为止。返回值指示 <code>wait_until</code> 为何返回。
-</p><p>如果此未来体是使用惰性求值调用 <a href="../async.html" title="cpp/thread/async"><span class="t-c"><span class="mw-geshi cpp source-cpp">async</span></span></a> 的结果，则此函数立即返回而不会等待。 
+</p><p>如果此未来体是使用惰性求值调用 <a href="../async.html" title="cpp/thread/async"><span class="t-c"><span class="mw-geshi cpp source-cpp">async</span></span></a> 的结果，则此函数立即返回而不会等待。
 </p><p>若调用此函数前 <span class="t-lc"><a href="valid.html" title="cpp/thread/future/valid">valid()</a></span> 为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>，或 <code>Clock</code> 不符合<a href="../../named_req/Clock.html" title="cpp/named req/Clock"><span style="font-style:italic">时钟</span> <span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">(Clock)</span> </a>要求则行为未定义。<span class="t-rev-inl t-since-cxx20"><span>若 <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../chrono/is_clock.html"><span class="kw2552">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">is_clock_v</span></span></a><span class="sy1">&lt;</span>Clock<span class="sy1">&gt;</span></span></span> 为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> 则程序非良构。</span><span><span class="t-mark-rev t-since-cxx20" style="white-space: nowrap;">(C++20 起)</span></span></span>
 </p>
 <h3><span class="mw-headline" id=".E5.8F.82.E6.95.B0">参数</span></h3>
@@ -384,10 +376,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <a href="../promise.html"><span class="kw2183">std::<span class="me2">promise</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> p1<span class="sy4">;</span>
     <a href="../future.html"><span class="kw2184">std::<span class="me2">future</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> f_completes <span class="sy1">=</span> p1.<span class="me1">get_future</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../thread.html"><span class="kw2150">std::<span class="me2">thread</span></span></a><span class="br0">(</span><span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><a href="../promise.html"><span class="kw2183">std::<span class="me2">promise</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> p1<span class="br0">)</span>
-                <span class="br0">{</span> 
-                    <a href="../sleep_for.html"><span class="kw2153">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span><a href="../../chrono/duration.html"><span class="kw999">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">seconds</span></span></a><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> 
-                    p1.<span class="me1">set_value_at_thread_exit</span><span class="br0">(</span><span class="nu0">9</span><span class="br0">)</span><span class="sy4">;</span> 
-                <span class="br0">}</span>, 
+                <span class="br0">{</span>
+                    <a href="../sleep_for.html"><span class="kw2153">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span><a href="../../chrono/duration.html"><span class="kw999">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">seconds</span></span></a><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+                    p1.<span class="me1">set_value_at_thread_exit</span><span class="br0">(</span><span class="nu0">9</span><span class="br0">)</span><span class="sy4">;</span>
+                <span class="br0">}</span>,
                 std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>p1<span class="br0">)</span>
     <span class="br0">)</span>.<span class="me1">detach</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
  
@@ -395,10 +387,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <a href="../promise.html"><span class="kw2183">std::<span class="me2">promise</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> p2<span class="sy4">;</span>
     <a href="../future.html"><span class="kw2184">std::<span class="me2">future</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> f_times_out <span class="sy1">=</span> p2.<span class="me1">get_future</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../thread.html"><span class="kw2150">std::<span class="me2">thread</span></span></a><span class="br0">(</span><span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><a href="../promise.html"><span class="kw2183">std::<span class="me2">promise</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> p2<span class="br0">)</span>
-                <span class="br0">{</span> 
-                    <a href="../sleep_for.html"><span class="kw2153">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span><a href="../../chrono/duration.html"><span class="kw999">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">seconds</span></span></a><span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> 
-                    p2.<span class="me1">set_value_at_thread_exit</span><span class="br0">(</span><span class="nu0">8</span><span class="br0">)</span><span class="sy4">;</span> 
-                <span class="br0">}</span>, 
+                <span class="br0">{</span>
+                    <a href="../sleep_for.html"><span class="kw2153">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span><a href="../../chrono/duration.html"><span class="kw999">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">seconds</span></span></a><span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+                    p2.<span class="me1">set_value_at_thread_exit</span><span class="br0">(</span><span class="nu0">8</span><span class="br0">)</span><span class="sy4">;</span>
+                <span class="br0">}</span>,
                 std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>p2<span class="br0">)</span>
     <span class="br0">)</span>.<span class="me1">detach</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
  
@@ -421,7 +413,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">等待 2 秒...
 f_completes: 9
 f_times_out 未完成!
-完成!</pre></div></div> 
+完成!</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -437,7 +429,7 @@ f_times_out 未完成!
 <td>   等待结果，如果在指定的超时间隔后仍然无法得到结果，则返回。 <br> <span class="t-mark" style="white-space: nowrap;">(公开成员函数)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10179/1000000
 Preprocessor generated node count: 13524/1000000

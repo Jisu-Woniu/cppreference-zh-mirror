@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading">C 数值极限接口</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -388,7 +380,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  <a href="../string/wide.html#Types" title="cpp/string/wide"><code>std::wint_t</code></a> 的最大值 <br> <span class="t-mark" style="white-space: nowrap;">(宏常量)</span> </td></tr>
 </table>
 <h4><span class="mw-headline" id=".E6.B3.A8.E8.A7.A3">注解</span></h4>
-<p>这些常量中除了 <span class="t-c"><span class="mw-geshi cpp source-cpp">CHAR_BIT</span></span> 和 <span class="t-c"><span class="mw-geshi cpp source-cpp">MB_LEN_MAX</span></span>，都要求它们的类型匹配<a href="../language/implicit_conversion.html#.E6.95.B4.E6.95.B0.E6.8F.90.E5.8D.87" title="cpp/language/implicit conversion">整数提升</a>的结果，如同应用于它们描述的类型的对象：<span class="t-c"><span class="mw-geshi cpp source-cpp">CHAR_MAX</span></span> 可能拥有类型 <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> 或 <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span>，但不会是 <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span>。同样， 
+<p>这些常量中除了 <span class="t-c"><span class="mw-geshi cpp source-cpp">CHAR_BIT</span></span> 和 <span class="t-c"><span class="mw-geshi cpp source-cpp">MB_LEN_MAX</span></span>，都要求它们的类型匹配<a href="../language/implicit_conversion.html#.E6.95.B4.E6.95.B0.E6.8F.90.E5.8D.87" title="cpp/language/implicit conversion">整数提升</a>的结果，如同应用于它们描述的类型的对象：<span class="t-c"><span class="mw-geshi cpp source-cpp">CHAR_MAX</span></span> 可能拥有类型 <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> 或 <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span>，但不会是 <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span>。同样，
 <span class="t-c"><span class="mw-geshi cpp source-cpp">USHRT_MAX</span></span> 可能不为无符号类型：它的类型可能是 <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>。
 </p><p><a href="../freestanding.html" title="cpp/freestanding">独立</a>实现可能缺少 typedef 名 <span class="t-lc"><a href="../utility/program/sig_atomic_t.html" title="cpp/utility/program/sig atomic t">std::sig_atomic_t</a></span> 和/或 <a href="../string/wide.html#.E7.B1.BB.E5.9E.8B" title="cpp/string/wide"><code>std::wint_t</code></a>，此情况下对应地缺少 <code>SIG_ATOMIC_*</code> 和/或 <code>WINT_*</code> 宏。
 </p>
@@ -463,7 +455,7 @@ SIG_ATOMIC_MAX = 2147483647
 WCHAR_MIN      = -2147483648
 WCHAR_MAX      = 2147483647
 WINT_MIN       = 0
-WINT_MAX       = 4294967295</pre></div></div> 
+WINT_MAX       = 4294967295</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E6.B5.AE.E7.82.B9.E6.95.B0.E7.B1.BB.E5.9E.8B.E6.9E.81.E9.99.90">浮点数类型极限</span></h3>
 <table class="t-dsc-begin">
@@ -646,7 +638,7 @@ FLT_ROUNDS       = 1
 FLT_EVAL_METHOD  = 0
 FLT_HAS_SUBNORM  = 1
 DBL_HAS_SUBNORM  = 1
-LDBL_HAS_SUBNORM = 1</pre></div></div> 
+LDBL_HAS_SUBNORM = 1</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E7.BC.BA.E9.99.B7.E6.8A.A5.E5.91.8A">缺陷报告</span></h3>
 <p>下列更改行为的缺陷报告追溯地应用于以前出版的 C++ 标准。
@@ -684,7 +676,7 @@ LDBL_HAS_SUBNORM = 1</pre></div></div>
 
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10722/1000000
 Preprocessor generated node count: 12700/1000000

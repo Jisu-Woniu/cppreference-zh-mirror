@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::</span>nextafter, <span style="font-size:0.8em; line-height:125%">std::</span>nextafterf, <span style="font-size:0.8em; line-height:125%">std::</span>nextafterl, <span style="font-size:0.8em; line-height:125%">std::</span>nexttoward, <span style="font-size:0.8em; line-height:125%">std::</span>nexttowardf, <span style="font-size:0.8em; line-height:125%">std::</span>nexttowardl</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -561,7 +553,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
         <span class="kw1">for</span> <span class="br0">(</span>Fp from <span class="sy1">=</span> start, to, Δ<span class="sy4">;</span>
             <span class="br0">(</span>Δ <span class="sy1">=</span> <span class="br0">(</span>to <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">nextafter</span><span class="br0">(</span>from, <span class="sy2">+</span><a href="INFINITY.html"><span class="kw1378">INFINITY</span></a><span class="br0">)</span><span class="br0">)</span> <span class="sy2">-</span> from<span class="br0">)</span> <span class="sy1">&lt;</span> Fp<span class="br0">(</span><span class="nu16">10.0</span><span class="br0">)</span><span class="sy4">;</span>
             from <span class="sy2">*</span><span class="sy1">=</span> Fp<span class="br0">(</span><span class="nu16">10.0</span><span class="br0">)</span><span class="br0">)</span>
-            <a href="../../io/cout.html"><span class="kw1760">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"nextafter("</span> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/fixed.html"><span class="kw1787">std::<span class="me2">scientific</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/setprecision.html"><span class="kw1798">std::<span class="me2">setprecision</span></span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> from 
+            <a href="../../io/cout.html"><span class="kw1760">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"nextafter("</span> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/fixed.html"><span class="kw1787">std::<span class="me2">scientific</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/setprecision.html"><span class="kw1798">std::<span class="me2">setprecision</span></span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> from
                       <span class="sy1">&lt;&lt;</span> <span class="st0">", INF) 给出 "</span> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/fixed.html"><span class="kw1786">std::<span class="me2">fixed</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/setprecision.html"><span class="kw1798">std::<span class="me2">setprecision</span></span></a><span class="br0">(</span><span class="nu0">6</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> to
                       <span class="sy1">&lt;&lt;</span> <span class="st0">"；Δ = "</span> <span class="sy1">&lt;&lt;</span> Δ <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span><span class="sy4">;</span>
@@ -610,7 +602,7 @@ nextafter(1e+16, INF) 给出 10000000000000002.000000；Δ = 2.000000
 long double 精度损失演示：
 nextafter(1e+18, INF) 给出 1000000000000000000.062500；Δ = 0.062500
 nextafter(1e+19, INF) 给出 10000000000000000001.000000；Δ = 1.000000
-nextafter(1e+20, INF) 给出 100000000000000000008.000000；Δ = 8.000000</pre></div></div> 
+nextafter(1e+20, INF) 给出 100000000000000000008.000000；Δ = 8.000000</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -621,7 +613,7 @@ nextafter(1e+20, INF) 给出 100000000000000000008.000000；Δ = 8.000000</pre><
 
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 12225/1000000
 Preprocessor generated node count: 18073/1000000

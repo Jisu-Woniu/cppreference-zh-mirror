@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::shared_timed_mutex::</span>try_lock_shared_for</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -292,7 +284,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody></table>
 <p>尝试以共享模式锁定互斥体。阻塞直至经过指定的 <span class="t-c"><span class="mw-geshi cpp source-cpp">timeout_duration</span></span> 或获得锁这两个事件的先达成者为止。成功获得锁时返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>，否则返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>。
 </p><p>若 <span class="t-c"><span class="mw-geshi cpp source-cpp">timeout_duration</span></span> 小于或等于 <span class="t-c"><span class="mw-geshi cpp source-cpp">timeout_duration.<span class="me1">zero</span><span class="br0">(</span><span class="br0">)</span></span></span>，则函数表现同 <span class="t-lc"><a href="try_lock_shared.html" title="cpp/thread/shared timed mutex/try lock shared">try_lock_shared()</a></span>。
-</p><p>由于调度或资源争议延迟，此函数可能阻塞长于 <span class="t-c"><span class="mw-geshi cpp source-cpp">timeout_duration</span></span>。 
+</p><p>由于调度或资源争议延迟，此函数可能阻塞长于 <span class="t-c"><span class="mw-geshi cpp source-cpp">timeout_duration</span></span>。
 </p><p>标准建议用稳定时钟度量时长。若实现用系统时钟代替，则等待时间亦可能对时钟调整敏感。
 </p><p>同 <span class="t-lc"><a href="try_lock_shared.html" title="cpp/thread/shared timed mutex/try lock shared">try_lock_shared()</a></span>，允许此函数虚假地失败而返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>，即使在 <span class="t-c"><span class="mw-geshi cpp source-cpp">timeout_duration</span></span> 期间某点互斥体不为任何其他线程所锁定。
 </p><p>若此操作返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>，则同一互斥体上先前的 <span class="t-lc"><a href="unlock.html" title="cpp/thread/shared timed mutex/unlock">unlock()</a></span> 操作<i>同步于</i>（定义于 <span class="t-lc"><a href="../../atomic/memory_order.html" title="cpp/atomic/memory order">std::memory_order</a></span>）它。
@@ -336,7 +328,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  尝试锁定互斥体，若互斥体在指定的时限时期中不可用则返回 <br> <span class="t-mark" style="white-space: nowrap;">(公开成员函数)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10310/1000000
 Preprocessor generated node count: 15098/1000000

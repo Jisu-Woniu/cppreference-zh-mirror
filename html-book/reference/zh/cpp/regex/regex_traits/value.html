@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::regex_traits&lt;CharT&gt;::</span>value</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -253,7 +245,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="co1">// 这个自定义的正则表达式特征允许日文数字</span>
 <span class="kw1">struct</span> jnum_traits <span class="sy4">:</span> <a href="../regex_traits.html"><span class="kw2030">std::<span class="me2">regex_traits</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span>
-<span class="br0">{</span>   
+<span class="br0">{</span>
     <span class="kw4">static</span> <a href="../../container/map.html"><span class="kw1284">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span>, <span class="kw4">int</span><span class="sy1">&gt;</span> data<span class="sy4">;</span>
     <span class="kw4">int</span> value<span class="br0">(</span><span class="kw4">wchar_t</span> ch, <span class="kw4">int</span> radix<span class="br0">)</span> <span class="kw4">const</span>
     <span class="br0">{</span>
@@ -268,7 +260,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                                             <span class="br0">{</span>L<span class="st0">'Ｃ'</span>,<span class="nu0">12</span><span class="br0">}</span>, <span class="br0">{</span>L<span class="st0">'Ｄ'</span>,<span class="nu0">13</span><span class="br0">}</span>, <span class="br0">{</span>L<span class="st0">'Ｅ'</span>,<span class="nu0">14</span><span class="br0">}</span>,
                                             <span class="br0">{</span>L<span class="st0">'Ｆ'</span>,<span class="nu0">15</span><span class="br0">}</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
-<span class="br0">{</span>   
+<span class="br0">{</span>
     <a href="../../locale/locale/global.html"><span class="kw2684">std::<span class="me2">locale</span><span class="sy4">::</span><span class="me2">global</span></span></a><span class="br0">(</span><a href="../../locale/locale.html"><span class="kw1898">std::<span class="me2">locale</span></span></a><span class="br0">(</span><span class="st0">"ja_JP.utf8"</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../../io/cout.html"><span class="kw1763">std::<span class="me2">wcout</span></span></a>.<span class="me1">sync_with_stdio</span><span class="br0">(</span><span class="kw2">false</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../../io/cout.html"><span class="kw1763">std::<span class="me2">wcout</span></span></a>.<span class="me1">imbue</span><span class="br0">(</span><a href="../../locale/locale.html"><span class="kw1898">std::<span class="me2">locale</span></span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
@@ -284,10 +276,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">\u98a8 匹配 風
-\u九八ａ八 以自定义特征匹配 風</pre></div></div> 
+\u九八ａ八 以自定义特征匹配 風</pre></div></div>
 </div>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 3551/1000000
 Preprocessor generated node count: 7930/1000000

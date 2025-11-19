@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::jthread::</span>detach</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -343,14 +335,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;thread&gt;</span>
  
-<span class="kw4">void</span> independentThread<span class="br0">(</span><span class="br0">)</span> 
+<span class="kw4">void</span> independentThread<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"启动并发线程。<span class="es1">\n</span>"</span><span class="sy4">;</span>
     <a href="../sleep_for.html"><span class="kw2153">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span><a href="../../chrono/duration.html"><span class="kw999">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">seconds</span></span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"退出并发线程。<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="kw4">void</span> threadCaller<span class="br0">(</span><span class="br0">)</span> 
+<span class="kw4">void</span> threadCaller<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"启动线程调用方。<span class="es1">\n</span>"</span><span class="sy4">;</span>
     <a href="../jthread.html"><span class="kw3237">std::<span class="me2">jthread</span></span></a> t<span class="br0">(</span>independentThread<span class="br0">)</span><span class="sy4">;</span>
@@ -359,7 +351,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"退出线程调用方。<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     threadCaller<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../sleep_for.html"><span class="kw2153">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span><a href="../../chrono/duration.html"><span class="kw999">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">seconds</span></span></a><span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
@@ -369,7 +361,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">启动线程调用方。
 启动并发线程。
 退出线程调用方。
-退出并发线程。</pre></div></div> 
+退出并发线程。</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-c++23">
@@ -405,7 +397,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10030/1000000
 Preprocessor generated node count: 12944/1000000

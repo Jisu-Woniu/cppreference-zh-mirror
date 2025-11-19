@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::ranges::</span><span style="font-size:0.8em; line-height:125%">views::</span>filter, <span style="font-size:0.8em; line-height:125%">std::ranges::</span>filter_view</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -670,15 +662,15 @@ filter_view<span class="br0">(</span> R<span class="sy3">&amp;&amp;</span>, Pred
     <span class="kw4">auto</span> even <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span><span class="br0">{</span> <span class="kw1">return</span> <span class="nu0">0</span> <span class="sy1">==</span> i <span class="sy2">%</span> <span class="nu0">2</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
     <span class="kw4">auto</span> square <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span><span class="br0">{</span> <span class="kw1">return</span> i <span class="sy2">*</span> i<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
  
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy4">:</span> std<span class="sy4">::</span><a href="iota_view.html"><span class="kw2914">views::<span class="me2">iota</span></span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">6</span><span class="br0">)</span> 
-               <span class="sy3">|</span> std<span class="sy4">::</span><span class="me2">views</span><span class="sy4">::</span><span class="me2">filter</span><span class="br0">(</span>even<span class="br0">)</span> 
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy4">:</span> std<span class="sy4">::</span><a href="iota_view.html"><span class="kw2914">views::<span class="me2">iota</span></span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">6</span><span class="br0">)</span>
+               <span class="sy3">|</span> std<span class="sy4">::</span><span class="me2">views</span><span class="sy4">::</span><span class="me2">filter</span><span class="br0">(</span>even<span class="br0">)</span>
                <span class="sy3">|</span> std<span class="sy4">::</span><a href="transform_view.html"><span class="kw2920">views::<span class="me2">transform</span></span></a><span class="br0">(</span>square<span class="br0">)</span><span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>输出：
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">0 4 16</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">0 4 16</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E7.BC.BA.E9.99.B7.E6.8A.A5.E5.91.8A">缺陷报告</span></h3>
 <p>下列更改行为的缺陷报告追溯地应用于以前出版的 C++ 标准。
@@ -720,7 +712,7 @@ filter_view<span class="br0">(</span> R<span class="sy3">&amp;&amp;</span>, Pred
 <td>  由另一 <a href="view.html" title="cpp/ranges/view"><code>view</code></a> 的到首个谓词返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> 为止的起始元素组成的 <a href="view.html" title="cpp/ranges/view"><code>view</code></a> <br> <span class="t-mark" style="white-space: nowrap;">(类模板)</span> <span class="t-mark" style="white-space: nowrap;">(范围适配器对象)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 16176/1000000
 Preprocessor generated node count: 19210/1000000

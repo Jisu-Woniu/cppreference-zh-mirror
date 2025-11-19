@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::stop_callback&lt;Callback&gt;::</span>~stop_callback</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -287,7 +279,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p><code>stop_callback</code> 析构函数被设计为阻止竞争条件与死锁。若另一线程同时调用回调，则析构函数不能返回直至它完成，否则函数对象能潜在地在执行时被销毁。不要求回调函数自身既不可复制亦不可移动————它在注册后就生存于 <code>stop_callback</code> 对象自身中。
 </p><p>另一方面，若调用析构函数的当前线程是与调用回调相同的线程，则析构函数不能等待，否则会出现死锁。同一线程在调用 <code>stop_callback</code> 的回调函数时析构它是可能且合法的，因为回调函数自身可能直接或间接销毁 <code>stop_callback</code>。
 </p>
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 8681/1000000
 Preprocessor generated node count: 10213/1000000

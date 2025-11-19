@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">operator</span> new<span style="font-size:0.8em; line-height:125%">, operator</span> new[]</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -711,7 +703,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 1) op new(size_t), size = 4
 4) op delete(void*, size_t), size = 4
 2) op new[](size_t), size = 40
-5) op delete[](void* ptr)</pre></div></div> 
+5) op delete[](void* ptr)</pre></div></div>
 </div>
 <p><code>operator new</code> 和 <code>operator new[]</code> 带额外用户定义参数的重载（“布置形式”，版本 <span class="t-v">(<a href="operator_new.html#.E7.89.88.E6.9C.AC_11">11-14</a>)</span>）可以照常在全局作用域声明，而且会被匹配的<a href="../../language/new.html#.E5.B8.83.E7.BD.AE_new" title="cpp/language/new">布置形式</a> <span class="mw-geshi cpp source-cpp">new</span> 表达式调用。
 </p><p>标准库的 <code>operator new</code> 的不分配布置形式 <span class="t-v">(<a href="operator_new.html#.E7.89.88.E6.9C.AC_9">9,10</a>)</span> 不能被替换，而且只能在布置 <span class="mw-geshi cpp source-cpp">new</span> 表达式不使用 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy4">::</span><span class="me2">new</span></span></span> 语法时才能通过提供类特定的带匹配签名的布置 <span class="mw-geshi cpp source-cpp">new</span> <span class="t-v">(<a href="operator_new.html#.E7.89.88.E6.9C.AC_19">19,20</a>)</span>自定义：<span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span> T<span class="sy4">::</span><span class="me2">operator</span> new<span class="br0">(</span>size_t, <span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span></span> 或 <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span> T<span class="sy4">::</span><span class="me2">operator</span> new<span class="br0">[</span><span class="br0">]</span><span class="br0">(</span>size_t, <span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span></span>。
@@ -771,7 +763,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>可能的输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">大小为 1 的自定义 new
-大小为 10 的自定义 new[]</pre></div></div> 
+大小为 10 的自定义 new[]</pre></div></div>
 </div>
 <p><code>operator new</code> 和 <code>operator new[]</code> 带额外用户定义形参（“布置形式”）的重载也可以定义为类成员 <span class="t-v">(<a href="operator_new.html#.E7.89.88.E6.9C.AC_19">19-22</a>)</span>。在拥有匹配签名的布置 <span class="mw-geshi cpp source-cpp">new</span> 表达式查找要调用的对应分配函数时，查找在检验全局作用域前，从类作用域开始，且在提供了类特定的布置 <span class="mw-geshi cpp source-cpp">new</span> 时会调用它。
 </p>
@@ -825,7 +817,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">调用自定义的布置 new，b = 1
-调用自定义的布置 delete，b = 1</pre></div></div> 
+调用自定义的布置 delete，b = 1</pre></div></div>
 </div>
 <p>如果类级别的 <code>operator new</code> 是模板函数，那么它必须拥有返回类型 <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span></span>，第一实参类型 <span class="t-lc"><a href="../../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>，且它必须拥有两个或更多形参。换言之，只有布置形式可以是模板。
 </p>
@@ -1019,7 +1011,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>   分配对齐的内存 <br> <span class="t-mark" style="white-space: nowrap;">(函数)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 20698/1000000
 Preprocessor generated node count: 22672/1000000

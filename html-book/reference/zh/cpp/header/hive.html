@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">标准库标头</span> &lt;hive&gt; <span class="t-mark-rev t-since-cxx26" style="white-space: nowrap;">(C++26)</span></h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -400,12 +392,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw4">constexpr</span> hive<span class="br0">(</span>hive_limits block_limits, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">explicit</span> hive<span class="br0">(</span>size_type n, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     hive<span class="br0">(</span>size_type n, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    hive<span class="br0">(</span>size_type n, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, hive_limits block_limits, 
+    hive<span class="br0">(</span>size_type n, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, hive_limits block_limits,
          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIter<span class="sy1">&gt;</span>
     hive<span class="br0">(</span>InputIter first, InputIter last, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIter<span class="sy1">&gt;</span>
-    hive<span class="br0">(</span>InputIter first, InputIter last, hive_limits block_limits, 
+    hive<span class="br0">(</span>InputIter first, InputIter last, hive_limits block_limits,
          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">template</span><span class="sy1">&lt;</span><a href="../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> R<span class="sy1">&gt;</span>
     hive<span class="br0">(</span>from_range_t, R<span class="sy3">&amp;&amp;</span> rg, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
@@ -420,7 +412,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
     ~hive<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     hive<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> hive<span class="sy3">&amp;</span> other<span class="br0">)</span><span class="sy4">;</span>
-    hive<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span>hive<span class="sy3">&amp;&amp;</span> other<span class="br0">)</span> 
+    hive<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span>hive<span class="sy3">&amp;&amp;</span> other<span class="br0">)</span>
       <span class="kw1">noexcept</span><span class="br0">(</span>allocator_traits<span class="sy1">&lt;</span>Allocator<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">propagate_on_container_move_assignment</span><span class="sy4">::</span><span class="me2">value</span>
             <span class="sy3">||</span> allocator_traits<span class="sy1">&lt;</span>Allocator<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">is_always_equal</span><span class="sy4">::</span><span class="me2">value</span><span class="br0">)</span><span class="sy4">;</span>
     hive<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span>initializer_list<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
@@ -498,7 +490,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
   <span class="kw1">private</span><span class="sy4">:</span>
     <span class="co1">// 仅用于阐释</span>
-    hive_limits current_limits_ <span class="sy1">=</span> <span class="coMULTI">/* 由实现定义 */</span> 
+    hive_limits current_limits_ <span class="sy1">=</span> <span class="coMULTI">/* 由实现定义 */</span>
   <span class="br0">}</span><span class="sy4">;</span>
  
   <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIter, <span class="kw1">class</span> Allocator <span class="sy1">=</span> allocator<span class="sy1">&lt;</span><span class="coMULTI">/*iter-value-type*/</span><span class="sy1">&lt;</span>InputIter<span class="sy1">&gt;&gt;</span>
@@ -518,7 +510,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="sy2">-</span><span class="sy1">&gt;</span> hive<span class="sy1">&lt;</span><a href="../ranges/iterator_t.html"><span class="kw2894">ranges::<span class="me2">range_value_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span>, Allocator<span class="sy1">&gt;</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 8933/1000000
 Preprocessor generated node count: 8291/1000000

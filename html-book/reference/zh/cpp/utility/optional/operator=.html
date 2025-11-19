@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::optional&lt;T&gt;::</span>operator=</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -322,7 +314,7 @@ optional<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span c
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>以 <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> 的内容替换 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> 的内容。 
+<p>以 <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> 的内容替换 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> 的内容。
 </p>
 <div class="t-li1"><span class="t-li">1)</span> 如果 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> 含值，那么通过调用 <span class="t-c"><code><i><a href="../optional.html#val" title="cpp/utility/optional">val</a></i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="sy1">&gt;</span>T<span class="sy4">::</span>~T<span class="br0">(</span><span class="br0">)</span></span></span> 来销毁包含的值；否则没有效果。此调用后 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> 不含值。</div>
 <div class="t-li1"><span class="t-li">2-5)</span> 赋值 <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> 的状态。此调用后 <span class="t-lc"><a href="operator_bool.html" title="cpp/utility/optional/operator bool">has_value()</a></span> 会返回 <span class="t-c"><span class="mw-geshi cpp source-cpp">other.<span class="me1">has_value</span><span class="br0">(</span><span class="br0">)</span></span></span>。
@@ -450,7 +442,7 @@ optional<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span c
 <span class="br0">}</span></pre></div></div>
 <p>输出：
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">abc def</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">abc def</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E7.BC.BA.E9.99.B7.E6.8A.A5.E5.91.8A">缺陷报告</span></h3>
 <p>下列更改行为的缺陷报告追溯地应用于以前出版的 C++ 标准。
@@ -501,7 +493,7 @@ optional<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span c
 <td>  原位构造所含值 <br> <span class="t-mark" style="white-space: nowrap;">(公开成员函数)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10571/1000000
 Preprocessor generated node count: 15939/1000000

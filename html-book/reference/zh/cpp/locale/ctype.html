@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::</span>ctype</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -578,7 +570,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">struct</span> csv_whitespace <span class="sy4">:</span> std<span class="sy4">::</span><span class="me2">ctype</span><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span>
 <span class="br0">{</span>
     <span class="kw4">bool</span> do_is<span class="br0">(</span>mask m, char_type c<span class="br0">)</span> <span class="kw4">const</span>
-    <span class="br0">{</span>   
+    <span class="br0">{</span>
         <span class="kw1">if</span> <span class="br0">(</span><span class="br0">(</span>m <span class="sy3">&amp;</span> space<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> c <span class="sy1">==</span> L<span class="st0">' '</span><span class="br0">)</span>
             <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span> <span class="co1">// 空格将不被分类为空白符</span>
  
@@ -586,7 +578,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="co1">// 逗号将被分类为空白符</span>
  
         <span class="kw1">return</span> ctype<span class="sy4">::</span><span class="me2">do_is</span><span class="br0">(</span>m, c<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 将剩下的留给基类</span>
-    <span class="br0">}</span> 
+    <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
@@ -620,7 +612,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   Column 3
   123
   456
-  789</pre></div></div> 
+  789</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -641,7 +633,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  表示系统提供的具名本地环境的 <span class="t-lc"><strong class="selflink">std::ctype</strong></span> <br> <span class="t-mark" style="white-space: nowrap;">(类模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 11555/1000000
 Preprocessor generated node count: 15318/1000000

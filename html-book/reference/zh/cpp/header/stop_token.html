@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">标准库标头</span> &lt;stop_token&gt; <span class="t-mark-rev t-since-cxx20" style="white-space: nowrap;">(C++20)</span></h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -429,7 +421,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw1">struct</span> <span class="coMULTI">/*check-type-alias-exists*/</span><span class="sy4">;</span>                          <span class="co1">// 仅用于阐释</span>
  
   <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Token<span class="sy1">&gt;</span>
-    concept stoppable_token <span class="sy1">=</span> 
+    concept stoppable_token <span class="sy1">=</span>
       requires <span class="br0">(</span><span class="kw4">const</span> Token tok<span class="br0">)</span> <span class="br0">{</span>
         <span class="kw1">typename</span> <span class="coMULTI">/*check-type-alias-exists*/</span><span class="sy1">&lt;</span>Token<span class="sy4">::</span><span class="kw1">template</span> callback_type<span class="sy1">&gt;</span><span class="sy4">;</span>
         <span class="br0">{</span> tok.<span class="me1">stop_requested</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">}</span> <span class="kw1">noexcept</span> <span class="sy2">-</span><span class="sy1">&gt;</span> same_as<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span>
@@ -440,7 +432,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
       equality_comparable<span class="sy1">&lt;</span>Token<span class="sy1">&gt;</span><span class="sy4">;</span>
  
   <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Token<span class="sy1">&gt;</span>
-    concept unstoppable_token <span class="sy1">=</span> 
+    concept unstoppable_token <span class="sy1">=</span>
       stoppable_token<span class="sy1">&lt;</span>Token<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
       requires <span class="br0">(</span><span class="kw4">const</span> Token tok<span class="br0">)</span> <span class="br0">{</span>
         requires bool_constant<span class="sy1">&lt;</span><span class="br0">(</span><span class="sy3">!</span>tok.<span class="me1">stop_possible</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
@@ -610,11 +602,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="br0">}</span><span class="sy4">;</span>
  
   <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> CallbackFn<span class="sy1">&gt;</span>
-  inplace_stop_callback<span class="br0">(</span>inplace_stop_token, CallbackFn<span class="br0">)</span> 
+  inplace_stop_callback<span class="br0">(</span>inplace_stop_token, CallbackFn<span class="br0">)</span>
     <span class="sy2">-</span><span class="sy1">&gt;</span> inplace_stop_callback<span class="sy1">&lt;</span>CallbackFn<span class="sy1">&gt;</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9584/1000000
 Preprocessor generated node count: 8431/1000000

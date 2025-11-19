@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::jthread::</span>request_stop</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -321,7 +313,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>若内部停止状态尚未被请求停止，则对它发出停止请求。
 </p><p>确定是原子地作出的，而若请求了停止，则原子地更新共享状态以避免竞争条件，使得：
 </p>
-<ul><li> 能在同一共享状态的 <span class="t-lc">std::stop_token</span> 与 <span class="t-lc">std::stop_source</span> 上同时调用 <span class="t-c"><span class="mw-geshi cpp source-cpp">stop_requested<span class="br0">(</span><span class="br0">)</span></span></span> 与 <span class="t-c"><span class="mw-geshi cpp source-cpp">stop_possible<span class="br0">(</span><span class="br0">)</span></span></span> 
+<ul><li> 能在同一共享状态的 <span class="t-lc">std::stop_token</span> 与 <span class="t-lc">std::stop_source</span> 上同时调用 <span class="t-c"><span class="mw-geshi cpp source-cpp">stop_requested<span class="br0">(</span><span class="br0">)</span></span></span> 与 <span class="t-c"><span class="mw-geshi cpp source-cpp">stop_possible<span class="br0">(</span><span class="br0">)</span></span></span>
 </li><li> 能从多个线程在同一 <code>jthread</code> 对象或与同一停止状态关联的其他 <span class="t-lc">std::stop_source</span> 对象上并发调用 <span class="t-c"><span class="mw-geshi cpp source-cpp">request_stop<span class="br0">(</span><span class="br0">)</span></span></span>，而将只有一个线程实际进行停止请求
 </li></ul>
 <p>然而，见注解节。
@@ -404,10 +396,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 140287623300928 请求嗜睡工人停止
 140287602706176 嗜睡工人已被请求停止
 140287623300928 嗜睡工人已合并
-140287594313472 等待工人已被请求停止</pre></div></div> 
+140287594313472 等待工人已被请求停止</pre></div></div>
 </div>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10006/1000000
 Preprocessor generated node count: 11296/1000000

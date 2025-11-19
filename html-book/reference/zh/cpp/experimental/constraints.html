@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading">制约与概念</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -184,7 +176,7 @@ concept <span class="kw4">bool</span> EqualityComparable <span class="sy1">=</sp
 <p>在编译时检测制约违规，早于模板实例化处理，这导致错误信息更易理解。
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><a href="../container/list.html"><span class="kw1278">std::<span class="me2">list</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> l <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">3</span>,<span class="sy2">-</span><span class="nu0">1</span>,<span class="nu0">10</span><span class="br0">}</span><span class="sy4">;</span>
-<a href="../algorithm/sort.html"><span class="kw1622">std::<span class="me2">sort</span></span></a><span class="br0">(</span>l.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, l.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> 
+<a href="../algorithm/sort.html"><span class="kw1622">std::<span class="me2">sort</span></span></a><span class="br0">(</span>l.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, l.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co1">//无概念的典型编译器诊断：</span>
 <span class="co1">//  invalid operands to binary expression ('std::_List_iterator&lt;int&gt;' and</span>
 <span class="co1">//  'std::_List_iterator&lt;int&gt;')</span>
@@ -270,7 +262,7 @@ concept <span class="kw4">bool</span> Derived <span class="sy1">=</span> <a href
  
 <span class="co1">// 来自标准库（范围 TS）的函数概念</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-concept <span class="kw4">bool</span> EqualityComparable<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> 
+concept <span class="kw4">bool</span> EqualityComparable<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
     <span class="kw1">return</span> requires<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="br0">{</span> <span class="br0">{</span>a <span class="sy1">==</span> b<span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> Boolean<span class="sy4">;</span> <span class="br0">{</span>a <span class="sy3">!</span><span class="sy1">=</span> b<span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> Boolean<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>下列限制应用于函数概念：
@@ -481,11 +473,11 @@ requires <span class="br0">{</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span> concept <span class="kw4">bool</span> Common <span class="sy1">=</span>
 requires <span class="br0">(</span>T t, U u<span class="br0">)</span> <span class="br0">{</span>
     <span class="kw1">typename</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// CommonType&lt;T, U&gt; 合法且指名类型</span>
-    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> 
-    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> 
+    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
+    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <h4><span class="mw-headline" id=".E5.A4.8D.E5.90.88.E8.A6.81.E6.B1.82">复合要求</span></h4>
-<p>复合要求拥有形式 
+<p>复合要求拥有形式
 </p>
 <table class="t-sdsc-begin">
 
@@ -536,7 +528,7 @@ requires<span class="br0">(</span>B b1, B b2<span class="br0">)</span> <span cla
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 concept <span class="kw4">bool</span> Semiregular <span class="sy1">=</span> DefaultConstructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
     CopyConstructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> Destructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> CopyAssignable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
-requires<span class="br0">(</span>T a, size_t n<span class="br0">)</span> <span class="br0">{</span>  
+requires<span class="br0">(</span>T a, size_t n<span class="br0">)</span> <span class="br0">{</span>
     requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span><span class="sy3">&amp;</span>a<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span>  <span class="co1">// 嵌套：“Same&lt;...&gt; 求值为 true”</span>
     <span class="br0">{</span> a.~T<span class="br0">(</span><span class="br0">)</span> <span class="br0">}</span> <span class="kw1">noexcept</span><span class="sy4">;</span>  <span class="co1">// 复合： "a.~T()" 是不抛出的合法表达式</span>
     requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span>new T<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// 嵌套：“Same&lt;...&gt; 求值为 true”</span>
@@ -632,7 +624,7 @@ g<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><
 <h3><span class="mw-headline" id=".E7.BC.96.E8.AF.91.E5.99.A8.E6.94.AF.E6.8C.81">编译器支持</span></h3>
 <p>GCC &gt;= 6.1 支持此技术规范（要求选项 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span>fconcepts</span></span>）。
 </p>
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 3354/1000000
 Preprocessor generated node count: 9551/1000000

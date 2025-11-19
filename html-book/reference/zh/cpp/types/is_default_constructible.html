@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::</span>is_default_constructible, <span style="font-size:0.8em; line-height:125%">std::</span>is_trivially_default_constructible, <span style="font-size:0.8em; line-height:125%">std::</span>is_nothrow_default_constructible</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -396,7 +388,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">struct</span> is_nothrow_default_constructible <span class="sy4">:</span> <a href="is_constructible.html"><span class="kw531">std::<span class="me2">is_nothrow_constructible</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 </td></tr></table>
 <h3><span class="mw-headline" id=".E6.B3.A8.E8.A7.A3">注解</span></h3>
-<p>多数实现中，<code>is_nothrow_default_constructible</code> 也检查析构函数是否抛出，因为它相当于 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span>T<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>。同样的情况适用于 <code>is_trivially_default_constructible</code>，它在这些实现中也要求析构函数为平凡：<a rel="nofollow" class="external text" href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=51452">GCC 漏洞 51452</a>、<a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2116">LWG 问题 2116</a>。 
+<p>多数实现中，<code>is_nothrow_default_constructible</code> 也检查析构函数是否抛出，因为它相当于 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span>T<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>。同样的情况适用于 <code>is_trivially_default_constructible</code>，它在这些实现中也要求析构函数为平凡：<a rel="nofollow" class="external text" href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=51452">GCC 漏洞 51452</a>、<a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2116">LWG 问题 2116</a>。
 </p><p><span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">is_default_constructible</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span></span> 并不测试 <span class="t-c"><span class="mw-geshi cpp source-cpp">T x<span class="sy4">;</span></span></span> 是否可编译；它尝试以空实参列表进行<a href="../language/direct_initialization.html" title="cpp/language/direct initialization">直接初始化</a>（见 <span class="t-lc"><a href="is_constructible.html" title="cpp/types/is constructible">std::is_constructible</a></span>）。因此，<span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">is_default_constructible_v</span><span class="sy1">&lt;</span><span class="kw4">const</span> <span class="kw4">int</span><span class="sy1">&gt;</span></span></span> 和 <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">is_default_constructible_v</span><span class="sy1">&lt;</span><span class="kw4">const</span> <span class="kw4">int</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy1">&gt;</span></span></span> 都为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>。
 </p>
 <h3><span class="mw-headline" id=".E7.A4.BA.E4.BE.8B">示例</span></h3>
@@ -445,7 +437,7 @@ static_assert<span class="br0">(</span>std<span class="sy4">::</span><span class
 <td>   指定一个类型的对象能默认构造  <br> <span class="t-mark" style="white-space: nowrap;">(概念)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10532/1000000
 Preprocessor generated node count: 13202/1000000

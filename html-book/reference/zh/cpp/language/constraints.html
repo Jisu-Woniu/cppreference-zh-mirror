@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading">约束与概念 <span class="t-mark-rev t-since-cxx20" style="white-space: nowrap;">(C++20 起)</span></h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -237,8 +229,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">替代表示</a></td></tr>
 <tr class="t-nv-h2"><td colspan="5"><a href="expressions.html#.E5.AD.97.E9.9D.A2.E9.87.8F" title="cpp/language/expressions">字面量</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">布尔</a> - <a href="integer_literal.html" title="cpp/language/integer literal">整数</a> - <a href="floating_literal.html" title="cpp/language/floating literal">浮点</a></td></tr>   
-<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">字符</a> - <a href="string_literal.html" title="cpp/language/string literal">字符串</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr> 
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">布尔</a> - <a href="integer_literal.html" title="cpp/language/integer literal">整数</a> - <a href="floating_literal.html" title="cpp/language/floating literal">浮点</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">字符</a> - <a href="string_literal.html" title="cpp/language/string literal">字符串</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">用户定义</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 <tr class="t-nv-h1"><td colspan="5">工具</td></tr>
 <tr class="t-nv"><td colspan="5"><a href="attributes.html" title="cpp/language/attributes">属性</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
@@ -298,7 +290,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><a href="class_template.html" title="cpp/language/class template">类模板</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="function_template.html" title="cpp/language/function template">函数模板</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">模板特化</a></td></tr>   
+<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">模板特化</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="pack.html" title="cpp/language/pack">形参包</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5">杂项</td></tr>
@@ -373,7 +365,7 @@ concept Hashable <span class="sy1">=</span> requires<span class="br0">(</span>T 
 <p>在编译时（模板实例化过程的早期）就检测是否违背约束，这样错误信息就更容易理解：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><a href="../container/list.html"><span class="kw1278">std::<span class="me2">list</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> l <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">3</span>,<span class="sy2">-</span><span class="nu0">1</span>,<span class="nu0">10</span><span class="br0">}</span><span class="sy4">;</span>
-<a href="../algorithm/sort.html"><span class="kw1622">std::<span class="me2">sort</span></span></a><span class="br0">(</span>l.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, l.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> 
+<a href="../algorithm/sort.html"><span class="kw1622">std::<span class="me2">sort</span></span></a><span class="br0">(</span>l.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, l.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co1">// 没有概念时典型编译器的诊断：</span>
 <span class="co1">// 二元表达式的操作数非法 ('std::_List_iterator&lt;int&gt;' 和 'std::_List_iterator&lt;int&gt;')</span>
 <span class="co1">//                           std::__lg(__last - __first) * 2);</span>
@@ -481,7 +473,7 @@ concept Derived <span class="sy1">=</span> <a href="../types/is_base_of.html"><s
 <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span> requires Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// OK：重声明</span>
  
 <span class="co1">// f 的第三个声明式，逻辑上等价但语法上不同，若包括它则非良构，无须诊断</span>
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>	
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
     requires Incrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 非良构，不要求诊断</span>
  
@@ -490,10 +482,10 @@ concept Derived <span class="sy1">=</span> <a href="../types/is_base_of.html"><s
 <span class="co1">// 第二个声明拥有 Decrementable&lt;T&gt; &amp;&amp; Incrementable&lt;T&gt;</span>
 <span class="co1">// 尽管它们在逻辑上等价</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span>Incrementable T<span class="sy1">&gt;</span> 
+<span class="kw1">template</span><span class="sy1">&lt;</span>Incrementable T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> g<span class="br0">(</span>T<span class="br0">)</span> requires Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span>Decrementable T<span class="sy1">&gt;</span> 
+<span class="kw1">template</span><span class="sy1">&lt;</span>Decrementable T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> g<span class="br0">(</span>T<span class="br0">)</span> requires Incrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// 非良构，不要求诊断</span></pre></div></div>
 <h4><span class="mw-headline" id=".E5.90.88.E5.8F.96">合取</span></h4>
 <p>两个约束的合取是通过在约束表达式中使用 <code>&amp;&amp;</code> 运算符来构成的：
@@ -515,7 +507,7 @@ concept UnsignedIntegral <span class="sy1">=</span> Integral<span class="sy1">&l
  
 <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// #2</span>
  
-<span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span> 
+<span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     f<span class="br0">(</span><span class="st0">'A'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK，调用 #2。当检查 #1 的约束时，</span>
             <span class="co1">// 不满足 'sizeof(char) &gt; 1'，故不检查 get_value&lt;T&gt;()</span>
@@ -629,13 +621,13 @@ requires <span class="br0">(</span>C<span class="sy1">&lt;</span>T<span class="s
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
 concept A <span class="sy1">=</span> T<span class="sy4">::</span><span class="me2">value</span> <span class="sy3">||</span> <span class="kw2">true</span><span class="sy4">;</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> U<span class="sy1">&gt;</span> 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> U<span class="sy1">&gt;</span>
 concept B <span class="sy1">=</span> A<span class="sy1">&lt;</span>U<span class="sy2">*</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// OK：规范化为以下各项的析取</span>
                    <span class="co1">// - T::value（映射为 T -&gt; U*）和</span>
                    <span class="co1">// - true（映射为空）。</span>
                    <span class="co1">// 映射中没有无效类型，尽管 T::value 对所有指针类型均非良构</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> V<span class="sy1">&gt;</span> 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> V<span class="sy1">&gt;</span>
 concept C <span class="sy1">=</span> B<span class="sy1">&lt;</span>V<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// 规范化为以下的析取</span>
                    <span class="co1">// - T::value（映射为 T-&gt; V&amp;*）和</span>
                    <span class="co1">// - true（映射为空）。</span>
@@ -817,7 +809,7 @@ h<span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span
 <td> 产生描述约束的 <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span> 类型表达式</td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 6165/1000000
 Preprocessor generated node count: 15850/1000000

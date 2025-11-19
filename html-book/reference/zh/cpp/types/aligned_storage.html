@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::</span>aligned_storage</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -370,7 +362,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw1">public</span><span class="sy4">:</span>
     <span class="co1">// 在对齐的存储中创建对象</span>
-    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> ...<span class="me1">Args</span><span class="sy1">&gt;</span> <span class="kw4">void</span> emplace_back<span class="br0">(</span>Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span><span class="br0">)</span> 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> ...<span class="me1">Args</span><span class="sy1">&gt;</span> <span class="kw4">void</span> emplace_back<span class="br0">(</span>Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span><span class="br0">)</span>
     <span class="br0">{</span>
         <span class="kw1">if</span><span class="br0">(</span> m_size <span class="sy1">&gt;=</span> N <span class="br0">)</span> <span class="co1">// 可能的错误处理</span>
             <span class="kw1">throw</span> <a href="../memory/new/bad_alloc.html"><span class="kw694">std::<span class="me2">bad_alloc</span></span></a><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
@@ -381,14 +373,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="br0">}</span>
  
     <span class="co1">// 在对齐的存储中访问对象</span>
-    <span class="kw4">const</span> T<span class="sy3">&amp;</span> operator<span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><a href="size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> pos<span class="br0">)</span> <span class="kw4">const</span> 
+    <span class="kw4">const</span> T<span class="sy3">&amp;</span> operator<span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><a href="size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> pos<span class="br0">)</span> <span class="kw4">const</span>
     <span class="br0">{</span>
         <span class="co1">// 注意：在 P0137R1 中的对象模型更改后需要 std::launder</span>
         <span class="kw1">return</span> <span class="sy2">*</span><a href="../utility/launder.html"><span class="kw1123">std::<span class="me2">launder</span></span></a><span class="br0">(</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>data<span class="br0">[</span>pos<span class="br0">]</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
  
     <span class="co1">// 从对齐的存储中销毁对象</span>
-    ~static_vector<span class="br0">(</span><span class="br0">)</span> 
+    ~static_vector<span class="br0">(</span><span class="br0">)</span>
     <span class="br0">{</span>
         <span class="kw1">for</span><span class="br0">(</span><a href="size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> pos <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> pos <span class="sy1">&lt;</span> m_size<span class="sy4">;</span> <span class="sy2">++</span>pos<span class="br0">)</span> <span class="br0">{</span>
             <span class="co1">// 注意：在 P0137R1 中的对象模型更改后需要 std::launder</span>
@@ -407,7 +399,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">*****
-**********</pre></div></div> 
+**********</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -443,7 +435,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  指针优化屏障 <br> <span class="t-mark" style="white-space: nowrap;">(函数模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9757/1000000
 Preprocessor generated node count: 13049/1000000

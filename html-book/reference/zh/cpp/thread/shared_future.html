@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::</span>shared_future</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -392,13 +384,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;iostream&gt;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
-<span class="br0">{</span>   
+<span class="br0">{</span>
     <a href="promise.html"><span class="kw2183">std::<span class="me2">promise</span></span></a><span class="sy1">&lt;</span><span class="kw4">void</span><span class="sy1">&gt;</span> ready_promise, t1_ready_promise, t2_ready_promise<span class="sy4">;</span>
     std<span class="sy4">::</span><span class="me2">shared_future</span><span class="sy1">&lt;</span><span class="kw4">void</span><span class="sy1">&gt;</span> ready_future<span class="br0">(</span>ready_promise.<span class="me1">get_future</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
     <a href="../chrono/time_point.html"><span class="kw993">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">time_point</span></span></a><span class="sy1">&lt;</span><a href="../chrono/high_resolution_clock.html"><span class="kw1013">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">high_resolution_clock</span></span></a><span class="sy1">&gt;</span> start<span class="sy4">;</span>
  
-    <span class="kw4">auto</span> fun1 <span class="sy1">=</span> <span class="br0">[</span><span class="sy3">&amp;</span>, ready_future<span class="br0">]</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../chrono/duration.html"><span class="kw995">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">duration</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span>, <a href="../numeric/ratio/ratio.html"><span class="kw1531">std::<span class="me2">milli</span></span></a><span class="sy1">&gt;</span> 
+    <span class="kw4">auto</span> fun1 <span class="sy1">=</span> <span class="br0">[</span><span class="sy3">&amp;</span>, ready_future<span class="br0">]</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../chrono/duration.html"><span class="kw995">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">duration</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span>, <a href="../numeric/ratio/ratio.html"><span class="kw1531">std::<span class="me2">milli</span></span></a><span class="sy1">&gt;</span>
     <span class="br0">{</span>
         t1_ready_promise.<span class="me1">set_value</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
         ready_future.<span class="me1">wait</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 等待来自 main() 的信号</span>
@@ -406,7 +398,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="br0">}</span><span class="sy4">;</span>
  
  
-    <span class="kw4">auto</span> fun2 <span class="sy1">=</span> <span class="br0">[</span><span class="sy3">&amp;</span>, ready_future<span class="br0">]</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../chrono/duration.html"><span class="kw995">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">duration</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span>, <a href="../numeric/ratio/ratio.html"><span class="kw1531">std::<span class="me2">milli</span></span></a><span class="sy1">&gt;</span> 
+    <span class="kw4">auto</span> fun2 <span class="sy1">=</span> <span class="br0">[</span><span class="sy3">&amp;</span>, ready_future<span class="br0">]</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../chrono/duration.html"><span class="kw995">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">duration</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span>, <a href="../numeric/ratio/ratio.html"><span class="kw1531">std::<span class="me2">milli</span></span></a><span class="sy1">&gt;</span>
     <span class="br0">{</span>
         t2_ready_promise.<span class="me1">set_value</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
         ready_future.<span class="me1">wait</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 等待来自 main() 的信号</span>
@@ -437,7 +429,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>可能的输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">线程 1 启动 0.072 ms 后接到信号
-线程 2 启动 0.041 ms 后接到信号</pre></div></div> 
+线程 2 启动 0.041 ms 后接到信号</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -453,7 +445,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  等待被异步设置的值 <br> <span class="t-mark" style="white-space: nowrap;">(类模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10803/1000000
 Preprocessor generated node count: 13144/1000000

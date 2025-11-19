@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::</span>is_member_function_pointer</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -371,7 +363,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">struct</span> is_member_function_pointer_helper<span class="sy1">&lt;</span>T U<span class="sy4">::</span><span class="sy2">*</span><span class="sy1">&gt;</span> <span class="sy4">:</span> <a href="is_function.html"><span class="kw483">std::<span class="me2">is_function</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span>
-<span class="kw1">struct</span> is_member_function_pointer 
+<span class="kw1">struct</span> is_member_function_pointer
     <span class="sy4">:</span> is_member_function_pointer_helper<span class="sy1">&lt;</span> <span class="kw1">typename</span> <a href="remove_cv.html"><span class="kw595">std::<span class="me2">remove_cv</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">type</span> <span class="sy1">&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 </td></tr></table>
 <h3><span class="mw-headline" id=".E7.A4.BA.E4.BE.8B">示例</span></h3>
@@ -388,7 +380,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <span class="co1">// 若 A::member 是数据成员而非函数，则在编译时失败</span>
     static_assert<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">is_member_function_pointer</span><span class="sy1">&lt;</span>decltype<span class="br0">(</span><span class="sy3">&amp;</span>A<span class="sy4">::</span><span class="me2">member</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span>,
-                  <span class="st0">"A::member 不是成员函数。"</span><span class="br0">)</span><span class="sy4">;</span> 
+                  <span class="st0">"A::member 不是成员函数。"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
@@ -410,7 +402,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>   检查类型是否为指向非静态成员函数或对象的指针类型 <br> <span class="t-mark" style="white-space: nowrap;">(类模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 10096/1000000
 Preprocessor generated node count: 14016/1000000

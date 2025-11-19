@@ -31,15 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading">低层内存管理</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -337,7 +329,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv-h1"><td colspan="5"><a href="new.html#.E5.AF.B9.E8.B1.A1.E8.AE.BF.E9.97.AE" title="cpp/memory/new">对象访问</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/launder.html" title="cpp/utility/launder"><span class="t-lines"><span>launder</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17" style="white-space: nowrap;">(C++17)</span></span></span></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
-<p><a href="../language/new.html" title="cpp/language/new">new 表达式</a>是创建拥有动态存储期对象或对象数组的仅有方式，即它们拥有不受制于创建它们所在的作用域的生存期。new 表达式通过调用分配函数获得存储。<a href="../language/delete.html" title="cpp/language/delete">delete 表达式</a>销毁最终派生对象或通过 new 表达式创造的数组，然后调用解分配函数。默认分配函数和默认解分配函数，及与之关联的函数、类型及对象在标头 <a href="../header/new.html" title="cpp/header/new"><tt>&lt;new&gt;</tt></a> 声明。 
+<p><a href="../language/new.html" title="cpp/language/new">new 表达式</a>是创建拥有动态存储期对象或对象数组的仅有方式，即它们拥有不受制于创建它们所在的作用域的生存期。new 表达式通过调用分配函数获得存储。<a href="../language/delete.html" title="cpp/language/delete">delete 表达式</a>销毁最终派生对象或通过 new 表达式创造的数组，然后调用解分配函数。默认分配函数和默认解分配函数，及与之关联的函数、类型及对象在标头 <a href="../header/new.html" title="cpp/header/new"><tt>&lt;new&gt;</tt></a> 声明。
 </p>
 <table class="t-dsc-begin">
 
@@ -421,7 +413,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  指针优化屏障 <br> <span class="t-mark" style="white-space: nowrap;">(函数模板)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 14405/1000000
 Preprocessor generated node count: 12885/1000000

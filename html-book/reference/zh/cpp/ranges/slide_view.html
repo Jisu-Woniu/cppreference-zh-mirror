@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::ranges::</span><span style="font-size:0.8em; line-height:125%">views::</span>slide, <span style="font-size:0.8em; line-height:125%">std::ranges::</span>slide_view</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -437,7 +429,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <div class="t-li1"><span class="t-li">2)</span> 名字 <span class="t-c"><span class="mw-geshi cpp source-cpp">views<span class="sy4">::</span><span class="me2">slide</span></span></span> 代表一个<a href="../named_req/RangeAdaptorObject.html" title="cpp/named req/RangeAdaptorObject"><span style="font-style:italic">范围适配器对象</span> <span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">(RangeAdaptorObject)</span> </a>。给定子表达式 <span class="t-c"><span class="mw-geshi cpp source-cpp">e</span></span> 与 <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span>，<span class="t-c"><span class="mw-geshi cpp source-cpp">views<span class="sy4">::</span><span class="me2">slide</span><span class="br0">(</span>e, n<span class="br0">)</span></span></span> <a href="../language/expressions.html#.E8.A1.A8.E8.BE.BE.E5.BC.8F.E7.AD.89.E4.BB.B7" title="cpp/language/expressions">表达式等价</a>于 <span class="t-c"><span class="mw-geshi cpp source-cpp">slide_view<span class="br0">(</span>e, n<span class="br0">)</span></span></span>。</div>
 <p>如果 <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> 不大于 <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span>，其行为未定义。
-</p><p><code>slide_view</code> 始终实现 <a href="forward_range.html" title="cpp/ranges/forward range"><code>forward_range</code></a>，并且如果被适配的 <a href="view.html" title="cpp/ranges/view"><code>view</code></a> 类型实现 <a href="bidirectional_range.html" title="cpp/ranges/bidirectional range"><code>bidirectional_range</code></a>、<a href="random_access_range.html" title="cpp/ranges/random access range"><code>random_access_range</code></a> 或 <a href="sized_range.html" title="cpp/ranges/sized range"><code>sized_range</code></a> 则它也实现对应的概念。 
+</p><p><code>slide_view</code> 始终实现 <a href="forward_range.html" title="cpp/ranges/forward range"><code>forward_range</code></a>，并且如果被适配的 <a href="view.html" title="cpp/ranges/view"><code>view</code></a> 类型实现 <a href="bidirectional_range.html" title="cpp/ranges/bidirectional range"><code>bidirectional_range</code></a>、<a href="random_access_range.html" title="cpp/ranges/random access range"><code>random_access_range</code></a> 或 <a href="sized_range.html" title="cpp/ranges/sized range"><code>sized_range</code></a> 则它也实现对应的概念。
 </p>
 <h3><span class="mw-headline" id=".E6.95.B0.E6.8D.AE.E6.88.90.E5.91.98">数据成员</span></h3>
 <table class="t-dsc-begin">
@@ -650,12 +642,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>输出：
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">所有宽度 W 的滑窗:
-W = 1: [1] [2] [3] [4] [5] [6] 
-W = 2: [1 2] [2 3] [3 4] [4 5] [5 6] 
-W = 3: [1 2 3] [2 3 4] [3 4 5] [4 5 6] 
-W = 4: [1 2 3 4] [2 3 4 5] [3 4 5 6] 
-W = 5: [1 2 3 4 5] [2 3 4 5 6] 
-W = 6: [1 2 3 4 5 6]</pre></div></div> 
+W = 1: [1] [2] [3] [4] [5] [6]
+W = 2: [1 2] [2 3] [3 4] [4 5] [5 6]
+W = 3: [1 2 3] [2 3 4] [3 4 5] [4 5 6]
+W = 4: [1 2 3 4] [2 3 4 5] [3 4 5 6]
+W = 5: [1 2 3 4 5] [2 3 4 5 6]
+W = 6: [1 2 3 4 5 6]</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-c++23">
@@ -679,7 +671,7 @@ W = 6: [1 2 3 4 5 6]</pre></div></div>
 <td>   另一个视图元素的 N 大小不重叠的连续块组成的 <a href="view.html" title="cpp/ranges/view"><code>view</code></a> 的范围  <br> <span class="t-mark" style="white-space: nowrap;">(类模板)</span> <span class="t-mark" style="white-space: nowrap;">(范围适配器对象)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 16552/1000000
 Preprocessor generated node count: 20922/1000000

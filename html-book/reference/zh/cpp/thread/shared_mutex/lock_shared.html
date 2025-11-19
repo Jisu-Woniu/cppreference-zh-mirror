@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::shared_mutex::</span>lock_shared</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -361,11 +353,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="br0">{</span>
         <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> start<span class="sy4">;</span> i <span class="sy1">&lt;</span> end<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
         <span class="br0">{</span>
-            <span class="kw4">auto</span> data <span class="sy1">=</span> i<span class="sy4">;</span>            
+            <span class="kw4">auto</span> data <span class="sy1">=</span> i<span class="sy4">;</span>
             <span class="br0">{</span>
                 <a href="../unique_lock.html"><span class="kw2171">std::<span class="me2">unique_lock</span></span></a><span class="sy1">&lt;</span><a href="../shared_mutex.html"><span class="kw2163">std::<span class="me2">shared_mutex</span></span></a><span class="sy1">&gt;</span> lock<span class="br0">(</span>smtx<span class="br0">)</span><span class="sy4">;</span>
                 product <span class="sy1">=</span> data<span class="sy4">;</span>
-            <span class="br0">}</span> 
+            <span class="br0">}</span>
             <a href="../sleep_for.html"><span class="kw2153">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span>3ms<span class="br0">)</span><span class="sy4">;</span>
         <span class="br0">}</span>
  
@@ -384,7 +376,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 smtx.<span class="me1">lock_shared</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 使用 std::shared_lock lock(smtx); 更好</span>
                 data <span class="sy1">=</span> product<span class="sy4">;</span>
                 smtx.<span class="me1">unlock_shared</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-            <span class="br0">}</span>                                   
+            <span class="br0">}</span>
  
             seen.<span class="me1">push_back</span><span class="br0">(</span>data<span class="br0">)</span><span class="sy4">;</span>
             <a href="../sleep_for.html"><span class="kw2153">std::<span class="me2">this_thread</span><span class="sy4">::</span><span class="me2">sleep_for</span></span></a><span class="br0">(</span>2ms<span class="br0">)</span><span class="sy4">;</span>
@@ -410,7 +402,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 144541248 见到: 2 44 3 4 46 5 6 7 7 8 9 51 10 11 11 12 -999
 110970432 见到: 42 2 3 45 4 5 47 6 7 8 8 9 10 11 11 12 -999
 119363136 见到: 42 2 3 4 46 5 6 7 7 8 9 9 10 11 11 12 12 -999
-136148544 见到: 2 44 3 4 46 5 6 48 7 8 9 51 10 11 11 12 12 -999</pre></div></div> 
+136148544 见到: 2 44 3 4 46 5 6 48 7 8 9 51 10 11 11 12 12 -999</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -431,7 +423,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  解锁互斥体（共享所有权） <br> <span class="t-mark" style="white-space: nowrap;">(公开成员函数)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9729/1000000
 Preprocessor generated node count: 12383/1000000

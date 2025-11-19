@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,15 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><code>requires</code> 表达式 <span class="t-mark-rev t-since-cxx20" style="white-space: nowrap;">(C++20 起)</span></h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -237,8 +229,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">替代表示</a></td></tr>
 <tr class="t-nv-h2"><td colspan="5"><a href="expressions.html#.E5.AD.97.E9.9D.A2.E9.87.8F" title="cpp/language/expressions">字面量</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">布尔</a> - <a href="integer_literal.html" title="cpp/language/integer literal">整数</a> - <a href="floating_literal.html" title="cpp/language/floating literal">浮点</a></td></tr>   
-<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">字符</a> - <a href="string_literal.html" title="cpp/language/string literal">字符串</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr> 
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">布尔</a> - <a href="integer_literal.html" title="cpp/language/integer literal">整数</a> - <a href="floating_literal.html" title="cpp/language/floating literal">浮点</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">字符</a> - <a href="string_literal.html" title="cpp/language/string literal">字符串</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">用户定义</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 <tr class="t-nv-h1"><td colspan="5">工具</td></tr>
 <tr class="t-nv"><td colspan="5"><a href="attributes.html" title="cpp/language/attributes">属性</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
@@ -298,7 +290,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><a href="class_template.html" title="cpp/language/class template">类模板</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="function_template.html" title="cpp/language/function template">函数模板</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">模板特化</a></td></tr>   
+<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">模板特化</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="pack.html" title="cpp/language/pack">形参包</a> <span class="t-mark-rev t-since-cxx11" style="white-space: nowrap;">(C++11)</span></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5">杂项</td></tr>
@@ -638,8 +630,8 @@ concept C <span class="sy1">=</span> requires
 concept Common <span class="sy1">=</span> requires <span class="br0">(</span>T<span class="sy3">&amp;&amp;</span> t, U<span class="sy3">&amp;&amp;</span> u<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">typename</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// CommonType&lt;T, U&gt; 是合法的类型名</span>
-    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> 
-    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> 
+    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
+    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <h4><span class="mw-headline" id=".E5.A4.8D.E5.90.88.E8.A6.81.E6.B1.82">复合要求</span></h4>
 <table class="t-sdsc-begin">
@@ -779,7 +771,7 @@ concept C2 <span class="sy1">=</span> requires<span class="br0">(</span>T x<span
 concept Semiregular <span class="sy1">=</span> DefaultConstructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
     CopyConstructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> Destructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> CopyAssignable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
 requires<span class="br0">(</span>T a, <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n<span class="br0">)</span>
-<span class="br0">{</span>  
+<span class="br0">{</span>
     requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span><span class="sy3">&amp;</span>a<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// 嵌套："Same&lt;...&gt; 求值为 true"</span>
     <span class="br0">{</span> a.~T<span class="br0">(</span><span class="br0">)</span> <span class="br0">}</span> <span class="kw1">noexcept</span><span class="sy4">;</span> <span class="co1">// 复合："a.~T()" 是不会抛出的合法表达式</span>
     requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span>new T<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// 嵌套："Same&lt;...&gt; 求值为 true"</span>
@@ -857,7 +849,7 @@ T add<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="b
 <td> 规定对模板实参的要求</td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 6392/1000000
 Preprocessor generated node count: 12168/1000000

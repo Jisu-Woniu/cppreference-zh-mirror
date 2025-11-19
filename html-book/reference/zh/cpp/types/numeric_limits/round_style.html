@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::numeric_limits&lt;T&gt;::</span>round_style</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -486,7 +478,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>这些值是常量，且不反映 <span class="t-lc"><a href="../../numeric/fenv/feround.html" title="cpp/numeric/fenv/feround">std::fesetround</a></span> 所做的舍入模式更改。可从 <span class="t-lc"><a href="../climits/FLT_ROUNDS.html" title="cpp/types/climits/FLT ROUNDS">FLT_ROUNDS</a></span> 或 <span class="t-lc"><a href="../../numeric/fenv/feround.html" title="cpp/numeric/fenv/feround">std::fegetround</a></span> 获得更改后的值。
 </p>
 <h3><span class="mw-headline" id=".E7.A4.BA.E4.BE.8B">示例</span></h3>
-<p>十进制值 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu16">0.1</span></span></span> 不能表示成二进制浮点数类型。在存储于 IEEE-754 <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span> 时，它落入 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.9999999999999*2<span class="t-su">-4<br></span></span> 与 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.999999999999a*2<span class="t-su">-4<br></span></span> 之间。舍入到最近可表示结果导致 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.999999999999a*2<span class="t-su">-4<br></span></span>。 
+<p>十进制值 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu16">0.1</span></span></span> 不能表示成二进制浮点数类型。在存储于 IEEE-754 <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span> 时，它落入 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.9999999999999*2<span class="t-su">-4<br></span></span> 与 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.999999999999a*2<span class="t-su">-4<br></span></span> 之间。舍入到最近可表示结果导致 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.999999999999a*2<span class="t-su">-4<br></span></span>。
 </p><p>同样地，十进制值 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu16">0.3</span></span></span> 在 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.3333333333333*2<span class="t-su">-2<br></span></span> 与 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.3333333333334*2<span class="t-su">-2<br></span></span> 之间，舍入到最近值后存储为 <span class="texhtml" style="white-space:nowrap;font-family:'Times New Roman',serif;font-size:120%;line-height:1em;margin-left:-0.1em;">0x1.3333333333333*2<span class="t-su">-2<br></span></span>。
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">运行此代码</div></div>
@@ -513,7 +505,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/fixed.html"><span class="kw1789">std::<span class="me2">hexfloat</span></span></a> 
+    <a href="../../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/fixed.html"><span class="kw1789">std::<span class="me2">hexfloat</span></span></a>
               <span class="sy1">&lt;&lt;</span> <span class="st0">"小数 0.1 作为 "</span>
               <span class="sy1">&lt;&lt;</span> <span class="nu16">0.1</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" 在 double 中存储<span class="es1">\n</span>"</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">"小数 0.3 作为 "</span>
@@ -524,7 +516,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">小数 0.1 作为 0x1.999999999999ap-4 在 double 中存储
 小数 0.3 作为 0x1.3333333333333p-2 在 double 中存储
-向最近可表示值舍入</pre></div></div> 
+向最近可表示值舍入</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -535,7 +527,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>   指示浮点数舍入模式 <br> <span class="t-mark" style="white-space: nowrap;">(枚举)</span> </td></tr>
 </table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 9504/1000000
 Preprocessor generated node count: 14872/1000000

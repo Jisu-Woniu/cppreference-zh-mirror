@@ -31,7 +31,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for cpp
- * CSS class: source-cpp, CSS id: 
+ * CSS class: source-cpp, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -83,7 +83,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
  * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * CSS class: source-text, CSS id:
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
@@ -107,15 +107,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
-                                <!-- firstHeading -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HW0LXMYCY');
-</script>
+                <!-- firstHeading -->
                 <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.8em; line-height:125%">std::basic_ios&lt;CharT,Traits&gt;::</span>good</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
@@ -259,8 +251,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     ofile.<span class="me1">close</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
  
     <a href="../basic_ifstream.html"><span class="kw1736">std::<span class="me2">ifstream</span></span></a> file<span class="br0">{</span>fname<span class="br0">}</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>file.<span class="me1">good</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>  
-    <span class="br0">{</span>  
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>file.<span class="me1">good</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"#1. 打开文件 test.txt 失败 - "</span>
                      <span class="st0">"错误标记之一为 true<span class="es1">\n</span>"</span><span class="sy4">;</span>
         <span class="kw1">return</span> <a href="../../utility/program/EXIT_status.html"><span class="kw975">EXIT_FAILURE</span></a><span class="sy4">;</span>
@@ -271,21 +263,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
         <a href="../cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
     <a href="../cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
-    <span class="kw1">if</span> <span class="br0">(</span>file.<span class="me1">bad</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> 
+    <span class="kw1">if</span> <span class="br0">(</span>file.<span class="me1">bad</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
     <span class="br0">{</span>
         <a href="../cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"#2. 读取时发生 I/O 错误 - badbit 为 true<span class="es1">\n</span>"</span><span class="sy4">;</span>
         <span class="kw1">return</span> <a href="../../utility/program/EXIT_status.html"><span class="kw975">EXIT_FAILURE</span></a><span class="sy4">;</span>
-    <span class="br0">}</span> 
+    <span class="br0">}</span>
     <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>file.<span class="me1">eof</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
         <a href="../cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"#3. 成功抵达文件末尾 - eofbit 为 true<span class="es1">\n</span>"</span>
-            <span class="st0">"这没问题，即便 file.good() 为 false<span class="es1">\n</span>"</span><span class="sy4">;</span> 
+            <span class="st0">"这没问题，即便 file.good() 为 false<span class="es1">\n</span>"</span><span class="sy4">;</span>
     <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>file.<span class="me1">fail</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
         <a href="../cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"#4. 遇到非整数数据 - failbit 为 true<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>可能的输出：
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">10 11 12 
-#4. 遇到非整数数据 - failbit 为 true</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">10 11 12
+#4. 遇到非整数数据 - failbit 为 true</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <p>下表显示 <code>basic_ios</code> 访问器（<strong class="selflink"><tt>good()</tt></strong>、<a href="fail.html" title="cpp/io/basic ios/fail"><tt>fail()</tt></a> 等）对于 <a href="../ios_base/iostate.html" title="cpp/io/ios base/iostate"><tt>ios_base::iostate</tt></a> 标志的所有可能组合的值：
@@ -469,7 +461,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">true
 </td></tr></table>
 
-<!-- 
+<!--
 NewPP limit report
 Preprocessor visited node count: 5284/1000000
 Preprocessor generated node count: 8834/1000000
