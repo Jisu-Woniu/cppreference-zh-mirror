@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "cppreference-zh",
+  "name": "cppreference-zh-mirror",
   "compatibility_date": "2025-11-09",
   "observability": {
     "enabled": true
